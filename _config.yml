@@ -1,1 +1,8 @@
+encoding: utf-8
+name: Thomas Gueldner, Ideeinc.
+markdown: kramdown
+kramdown:  
+  parse_block_html: true
+github: [metadata]
+gems: [markdown]
 theme: jekyll-theme-slate
