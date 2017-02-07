@@ -1,0 +1,12 @@
+<h4 class="widget-title">Languages</h4>
+<a href="#" class="language-link">日本語 (Japanese)</a><br>
+<a href="#" class="language-link">English</a>
+<h4 class="widget-title">Users Guide</h4>
+{% assign url_parts = page.url | split: '/' %}
+{% for part in url_parts %}
+    {% if part == 'jp' %}
+    {% include datamenu menu=site.data.navigation-jp all=true %}
+    {% else %}    
+    {% include datamenu menu=site.data.navigation-en all=true %}
+    {% endif %}
+{% endfor %}

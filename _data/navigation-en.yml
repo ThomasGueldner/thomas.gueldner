@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Home",
+        "url": "/",
+    },
+    {
+        "title": "Documents",
+        "url": "/docs/en/documents",
+        "children": [
+            {
+                "title": "Introduction",
+                "url": "/docs/en/documents/introduction",
+                "children": [
+                    {
+                        "title": "Requirements",
+                        "url": "/docs/en/documents/introduction/requirements.md"
+                    },
+                    {
+                        "title": "License",
+                        "url": "/docs/en/documents/introduction/license.md"
+                    }
+                ]
+            }
+        ]
+    }
+]
