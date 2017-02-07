@@ -252,6 +252,8 @@ Small Device Styles
   h5 { font-size: 14px; }
   h6 { font-size: 12px; }
   code, pre { min-width: 320px; max-width: 480px; font-size: 11px; } }
+body { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; color: #666; }
+
 .inner { max-width: 980px; margin: 0px auto; padding: 15px; }
 
 #header { width: 100%; height: 140px; margin-bottom: 10px; }
@@ -266,16 +268,20 @@ Small Device Styles
 
 #site-description { text-align: right; padding-right: 20px; width: 40%; text-align: left; clear: both; float: left; position: absolute; margin-top: 90px; margin-left: 40px; color: #C2DEFF; }
 
-#right-sidebar-menu { width: 220px; float: right; padding: 0 10px 10px 10px; }
+#navigation { width: 220px; float: right; padding: 0 10px 10px 10px; }
 
 ul.menu > li.branch.open { list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 400 300"><path d="M 0 0 L 400 0 L 200 300 z" fill="%23424242" /></svg>'); }
 
-#menu-item-list { padding-left: 16px; }
-
 .widget-title { border-bottom: 1px solid #222222; margin-bottom: 5px; }
 
-.language-link, .menu-link, .language-link:visited, .menu-link:visited { color: #000; text-decoration: none; }
+.language-link, .menu a, .language-link:visited, .menu a:visited { color: #000; text-decoration: none; }
 
-.language-link:hover, .menu-link:hover { color: blue; }
+.menu a:active { color: #007edf; }
 
-#footer_wrap { color: white; }
+.language-link:hover, .menu a:hover { color: blue; text-decoration: none; }
+
+#footer_wrap { color: white; margin-bottom: 25px; }
+
+#site-info { float: left; }
+
+#publisher-info { float: right; }

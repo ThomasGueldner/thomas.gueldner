@@ -1,9 +1,5 @@
 [
     {
-        "title": "Home",
-        "url": "/",
-    },
-    {
         "title": "Documents",
         "url": "/docs/en/documents",
         "children": [
@@ -13,11 +9,11 @@
                 "children": [
                     {
                         "title": "Requirements",
-                        "url": "/docs/en/documents/introduction/requirements.md"
+                        "url": "/docs/en/documents/introduction/requirements.html"
                     },
                     {
                         "title": "License",
-                        "url": "/docs/en/documents/introduction/license.md"
+                        "url": "/docs/en/documents/introduction/license.html"
                     }
                 ]
             }

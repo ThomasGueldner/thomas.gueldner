@@ -1,0 +1,22 @@
+[
+    {
+        "title": "ドキュメント",
+        "url": "/docs/jp/documents",
+        "children": [
+            {
+                "title": "はじめに",
+                "url": "/docs/jp/documents/introduction",
+                "children": [
+                    {
+                        "title": "必要要件",
+                        "url": "/docs/jp/documents/introduction/requirements.html"
+                    },
+                    {
+                        "title": "ライセンス",
+                        "url": "/docs/jp/documents/introduction/license.html"
+                    }
+                ]
+            }
+        ]
+    }
+]
