@@ -8,13 +8,13 @@
 {% if url_parts.size != 0 %}
     {% for part in url_parts %}
         {% if part == 'jp' %}
-        {% include datamenu menu=site.data.navigation-jp all=true %}
+        {% include generateDynamicMenu.html root="/user-guide/jp" %}
         {% break %}
         {% elsif part == 'en' %}   
-        {% include datamenu menu=site.data.navigation-en all=true %}
+        {% include generateDynamicMenu.html root="/user-guide/en" %}
         {% break %}
         {% endif %}
     {% endfor %}
-    {% else %} 
-    {% include datamenu menu=site.data.navigation-en all=true %}
+{% else %} 
+    {% include generateDynamicMenu.html root="/user-guide/en" %}
 {% endif %}

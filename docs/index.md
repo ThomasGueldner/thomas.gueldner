@@ -1,3 +1,7 @@
+---
+title: News
+---
+
 ## *Small but Powerful and Efficient*
 
 TreeFrog Framework is a high-speed and full-stack C++ framework for developing Web applications, which supports HTTP and WebSocket protocol.

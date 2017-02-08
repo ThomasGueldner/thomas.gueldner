@@ -8,7 +8,7 @@ body {
     color: #666;
 }
 .inner {
-    max-width: 980px;
+    min-width: 980px;
     margin: 0px auto;
     padding: 15px;
 }
@@ -18,7 +18,7 @@ body {
     margin-bottom: 10px;
 }
 #logo {
-    background: url('../../images/treefrog-logo.png');
+    background: url('../images/treefrog-logo.png');
     background-repeat: no-repeat;
     width: 202px;
     height: 134px;
@@ -33,6 +33,7 @@ body {
 #main-content {
     width: 730px;
     float: left;
+    padding-bottom: 10px;
 }
 #main_content_wrap {
     overflow: auto;
@@ -63,6 +64,10 @@ body {
     width: 220px;
     float: right;
     padding: 0 10px 10px 10px;
+    font-size: 0.9em;
+}
+#a.menuItemLink:hover {
+    color: #007edf;
 }
 ul.menu > li.branch.open {
     list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 400 300"><path d="M 0 0 L 400 0 L 200 300 z" fill="%23424242" /></svg>');
@@ -71,11 +76,11 @@ ul.menu > li.branch.open {
     border-bottom: 1px solid #222222;
     margin-bottom: 5px;
 }
-.language-link, .menu a, .language-link:visited, .menu a:visited {
+.language-link, a.menuItemLink, .language-link:visited, a.menuItemLink:visited {
     color: #000;
     text-decoration: none;
 }
-.menu a:active {
+a.activeMenuItem {
     color: #007edf;
 }
 .language-link:hover, .menu a:hover {
@@ -94,4 +99,7 @@ ul.menu > li.branch.open {
 }
 .standard-link {
     color: white;
+}
+.highlight {
+    width: calc(100% - 20px );
 }
