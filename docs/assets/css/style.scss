@@ -17,6 +17,19 @@ body {
     height: 140px;
     margin-bottom: 10px;
 }
+#logo {
+    background: url('../../images/treefrog-logo.png');
+    background-repeat: no-repeat;
+    width: 202px;
+    height: 134px;
+    float: right;
+    right: 20px;
+    margin-top: -50px;
+    padding-bottom: 20px;
+}
+#project_tagline {
+    float: left;
+}
 #main-content {
     width: 730px;
     float: left;
@@ -78,4 +91,7 @@ ul.menu > li.branch.open {
 }
 #publisher-info {
     float: right;
+}
+.standard-link {
+    color: white;
 }
