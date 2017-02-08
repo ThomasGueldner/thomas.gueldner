@@ -66,7 +66,7 @@ body {
     padding: 0 10px 10px 10px;
     font-size: 0.9em;
 }
-#a.menuItemLink:hover {
+a.menuItemLink:hover {
     color: #007edf;
 }
 ul.menu > li.branch.open {
@@ -101,5 +101,5 @@ a.activeMenuItem {
     color: white;
 }
 .highlight {
-    width: calc(100% - 20px );
+    width: calc( 100% - 20px );
 }
