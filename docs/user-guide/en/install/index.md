@@ -1,6 +1,6 @@
 ---
 title: Install
-id: 2_0
+id: 20_0
 ---
 
 ## Install

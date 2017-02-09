@@ -14,7 +14,8 @@
     <div id="header_wrap" class="outer">
         {% include header.html %}
     </div>
-  
+    <!-- /#HEADER -->
+    
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
         <div class="inner">
@@ -22,14 +23,19 @@
                 {{ content }}
             </div>
             <!-- NAIVGATION -->
-            <div id="navigation"> {% include navigation.html %} </div>
+            <div id="navigation"> 
+                {% include navigation.html %} 
+            </div>
             <!-- /#NAIVGATION -->
         </div>
     </div>
+    <!-- /#MAIN CONTENT -->
+    
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
         {% include footer.html %}
     </div>
+    <!-- /#FOOTER  -->
 </body>
 
 </html>

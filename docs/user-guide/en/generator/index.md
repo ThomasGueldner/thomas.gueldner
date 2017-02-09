@@ -1,6 +1,6 @@
 ---
 title: Generator
-id: 4_0
+id: 40_0
 ---
 
 ## Generator

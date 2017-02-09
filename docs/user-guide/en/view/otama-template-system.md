@@ -1,4 +1,4 @@
 ---
 title: Otama Template System
-id: 7_2
+id: 70_2
 ---

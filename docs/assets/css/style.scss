@@ -74,7 +74,8 @@ body {
     margin-left: 10px;
 }
 a.menuItemLink:hover {
-    color: #007edf;
+    color: #007edf !important;
+    text-decoration: none;
 }
 ul.menu > li.branch.open {
     list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 400 300"><path d="M 0 0 L 400 0 L 200 300 z" fill="%23424242" /></svg>');
@@ -90,7 +91,7 @@ ul.menu > li.branch.open {
 a.activeMenuItem {
     color: #007edf;
 }
-.language-link:hover, .menu a:hover {
+.language-link:hover {
     color: blue;
     text-decoration: none;
 }

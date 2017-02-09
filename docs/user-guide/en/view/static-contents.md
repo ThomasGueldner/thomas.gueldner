@@ -1,4 +1,4 @@
 ---
 title: Static Contents
-id: 7_3
+id: 70_3
 ---

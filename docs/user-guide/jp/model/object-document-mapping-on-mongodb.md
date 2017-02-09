@@ -1,4 +1,4 @@
 ---
 title: MongoDB の O/Dマッピング
-id: 6_6
+id: 60_6
 ---

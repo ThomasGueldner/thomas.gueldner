@@ -1,4 +1,4 @@
 ---
 title: Object-Document Mapping on MongoDB
-id: 6_6
+id: 60_6
 ---

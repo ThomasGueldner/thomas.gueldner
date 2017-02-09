@@ -1,6 +1,6 @@
 ---
 title: License
-id: 1_2
+id: 10_2
 ---
 
 ## License

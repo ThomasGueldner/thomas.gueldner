@@ -1,4 +1,4 @@
 ---
 title: MongoDBへのアクセス
-id: 6_5
+id: 60_5
 ---

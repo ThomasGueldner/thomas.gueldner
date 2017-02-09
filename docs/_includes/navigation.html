@@ -1,36 +1,28 @@
 <h4 class="widget-title">Languages</h4>
 <ul>
-{% assign url_parts = page.url | split: '/' %}
-{% if url_parts.size != 0 %}
-    {% for part in url_parts %}
-        {% if part == 'jp' %}
-        <li><a href="{{ page.url }}" class="language-link">日本語 (Japanese)</a></li>
-        {% assign en_url = page.url | replace: 'jp', 'en' %}
-        <li><a href="{{ en_url }}" class="language-link">English</a></li>
-        {% break %}
-        {% elsif part == 'en' %} 
-        {% assign jp_url = page.url | replace: 'en', 'jp' %}
-        <li><a href="{{ jp_url }}" class="language-link">日本語 (Japanese)</a></li>
-        <li><a href="{{ page.url }}" class="language-link">English</a></li>
-        {% break %}
-        {% endif %}
-    {% endfor %}
+{% assign url = page.url %}
+{% if url contains '/jp/ %}
+    <li><a href="{{ page.url }}" class="language-link">日本語 (Japanese)</a></li>
+    {% if url contains 'user-guide' %}
+        {% assign en_url = page.url | replace: '/jp/', '/en/' %}
+    {% else %}
+        {% assign en_url = page.url | replace: '/jp/', '' %}
+    {% endif %}
+    <li><a href="{{ en_url }}" class="language-link">English</a></li>
+{% elsif url contains '/en/' %} 
+    {% assign jp_url = page.url | replace: '/en/', '/jp/' %}
+    <li><a href="{{ jp_url }}" class="language-link">日本語 (Japanese)</a></li>
+    <li><a href="{{ page.url }}" class="language-link">English</a></li>
 {% else %} 
     <li><a href="/jp" class="language-link">日本語 (Japanese)</a></li>
     <li><a href="/" class="language-link">English</a></li>
 {% endif %}
 </ul>
 <h4 class="widget-title">Users Guide</h4>
-{% if url_parts.size != 0 %}
-    {% for part in url_parts %}
-        {% if part == 'jp' %}
-        {% include generateDynamicMenu.html root="/user-guide/jp" %}
-        {% break %}
-        {% elsif part == 'en' %}   
-        {% include generateDynamicMenu.html root="/user-guide/en" %}
-        {% break %}
-        {% endif %}
-    {% endfor %}
+{% if url contains '/jp/' %}
+    {% include generateDynamicMenu.html root="/user-guide/jp" %}
+{% elsif url contains '/en/' %}   
+    {% include generateDynamicMenu.html root="/user-guide/en" %}
 {% else %} 
     {% include generateDynamicMenu.html root="/user-guide/en" %}
 {% endif %}
