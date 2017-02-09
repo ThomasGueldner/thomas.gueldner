@@ -6,7 +6,7 @@ id: 50_2
 ## Cookie
 
 Cookies are information stored in the browser (PC) as a pair (keys and value) to be shared between the browser and the Web application side. There are some restrictions, but cookies are a function supported by almost all browsers. They are essential for operating sessions as described in the previous section.
-     
+
 The Cookie system was originally proposed by Netscape Communications Corporation and published as an RFC before becoming standardized.
  
 

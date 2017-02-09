@@ -71,7 +71,7 @@ Import the source code of the application file to Qt Creator. Then click [File] 
 ![QtCreator Import](http://www.treefrogframework.org/wp-content/uploads/2012/12/QtCreator-import.png "QtCreator Import")
 
 Now we will run the settings screen for debugging.
-The last of the tadpole command arguments, specifies -e option and the application route’s absolute path. You may remember that the -e option is the setting for switching the DB environment.  Let's assume you choose dev.
+The last of the tadpole command arguments, specifies -e option and the application route’s absolute path. You may remember that the -e option is the setting for switching the DB environment. Let's assume you choose dev.
  
 In the case of Linux :
 In the next screen we choose /var/tmp/blogapp as the application root.
@@ -89,7 +89,7 @@ And an example of run configuration :
 
 ![QtCreator build settings window](http://www.treefrogframework.org/wp-content/uploads/QtCreator-run-settings-win.png "QtCreator build settings window")
 
-That is all about the configuration settings.  
+That is all about the configuration settings.
 When adding a breakpoint to the source code, always try to access it from your Web browser.
 
 Check the processing. Does it stop at the breakpoint?

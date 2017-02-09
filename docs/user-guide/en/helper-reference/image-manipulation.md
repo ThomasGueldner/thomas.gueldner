@@ -5,7 +5,7 @@ id: 80_7
 
 ## Image Manipulation
 
-There are various libraries that can make image processing.  If you need to do complicated image processing, you may need to use [OpenCV](http://opencv.org/){:target="_blank"}, but here I would like to explain the Qt library. It’s easy to use. Since Qt is the base library of the TreeFrog Framework, it is ready to provide a GUI tool kit including many useful functions for image processing.
+There are various libraries that can make image processing. If you need to do complicated image processing, you may need to use [OpenCV](http://opencv.org/){:target="_blank"}, but here I would like to explain the Qt library. It’s easy to use. Since Qt is the base library of the TreeFrog Framework, it is ready to provide a GUI tool kit including many useful functions for image processing.
 
 At first, for image processing, it is necessary to activate the QtGUI module of the TreeFrog framework.
 Let’s recompile the framework.
@@ -22,7 +22,7 @@ In the case of Linux / Mac OS X :
  $ sudo make install
 ```
 
-In the case of  Windows :
+In the case of Windows :
 
 ```
  > configure --enable-debug --enable-gui-mod
@@ -37,7 +37,7 @@ In the case of  Windows :
  > cd ..\tools
  > mingw32-make install
 ```
-   
+
 Next, the setting is also required for the Web application side. Edit the project file (.pro), add "gui" in the QT variable.
 
 ```
@@ -59,8 +59,8 @@ img.save("qvga.jpg");
 ```
  
 - In reality, use the absolute path as a the file path.
-  
-Using this QImage class, you can convert while ignoring aspect ratio.  Also you can convert to a different image format. Please see [Qt Document](http://qt-project.org/doc/qt-4.8/){:target="_blank"} for detail.
+
+Using this QImage class, you can convert while ignoring aspect ratio. Also you can convert to a different image format. Please see [Qt Document](http://qt-project.org/doc/qt-4.8/){:target="_blank"} for detail.
 
 ## Rotation of the Image
 

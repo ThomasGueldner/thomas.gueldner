@@ -34,9 +34,9 @@ The following items will be generated as a directory.
  
 ## Generate Scaffold
 
-The scaffold is a basic implementation that allows CRUD operations to take place. Included in the scaffold are; controller, model, source files for views, and project files (pro).  The scaffold therefore forms a good basis on which to start a full-scale development.
+The scaffold is a basic implementation that allows CRUD operations to take place. Included in the scaffold are; controller, model, source files for views, and project files (pro). The scaffold therefore forms a good basis on which to start a full-scale development.
 
-In order to make a scaffold in the generator command, you need to define a table in the database in advance, and to describe the database information in the configuration file.  Now, let's define a table.
+In order to make a scaffold in the generator command, you need to define a table in the database in advance, and to describe the database information in the configuration file. Now, let's define a table.
 See this example:
 
 ```sql
@@ -137,7 +137,7 @@ Agreed?
 
 ## Naming Conventions
 
-TreeFrog has a class naming and file naming convention.  With the generator, class or file names are generated under the following terms and conditions.
+TreeFrog has a class naming and file naming convention. With the generator, class or file names are generated under the following terms and conditions.
 
 ### Convention for Naming of Controllers
 

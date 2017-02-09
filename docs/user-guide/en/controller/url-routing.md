@@ -24,7 +24,7 @@ Here’s an example;
 ```
 
 In this case, if the browser requests '/index' either by POST method or GET method, the controller will respond with the *index* action of *Merge*. 
-  
+
 The next case is where the get directives have been defined.
 
 ```

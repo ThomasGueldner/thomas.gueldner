@@ -12,7 +12,7 @@ We’ll define a table as follows.
 ```sql
  > CREATE TABLE user ( username VARCHAR(128) PRIMARY KEY, password VARCHAR(128) );
 ```
-  
+
 Then navigate to the application root directory and create a model class by generator command.
 
 ```
@@ -23,9 +23,9 @@ Then navigate to the application root directory and create a model class by gene
    created  models/models.pro
 ```
  
-By specifying the 'usermodel' option (or you can use  'u' option), the user model class that inherits from TAbstractUser class is created.
+By specifying the 'usermodel' option (or you can use 'u' option), the user model class that inherits from TAbstractUser class is created.
 
-The field names of user name and password of the user model class are 'username' and 'password' by default, but you can change them.  For example, in the case of defining the schema using the name of 'user_id' and 'pass', make the class after specifying by using the generator command as follows. 
+The field names of user name and password of the user model class are 'username' and 'password' by default, but you can change them. For example, in the case of defining the schema using the name of 'user_id' and 'pass', make the class after specifying by using the generator command as follows. 
 
 ```
  $ tspawn usermodel user user_id pass
@@ -50,7 +50,7 @@ User User::authenticate(const QString &username, const QString &password)
 ```
 
 Please ensure that any modifications are based on the above.
-There may be cases where the authentication process is left to an external system.  Also there may be cases when, as a password, md5 values need to be saved.
+There may be cases where the authentication process is left to an external system. Also there may be cases when, as a password, md5 values need to be saved.
 
 ## Login
 
@@ -102,7 +102,7 @@ Now, we'll create a view of the login form using the view file *views/account/fo
 </html>
 ```
  
-In the login action, you can write the authentication process that is executed when user name and password are posted. Once the authentication is successful, call the userLogin() method, and then let the user login to the system.  
+In the login action, you can write the authentication process that is executed when user name and password are posted. Once the authentication is successful, call the userLogin() method, and then let the user login to the system.
 
 ```c++
 void AccountController::login()
@@ -161,7 +161,7 @@ bool HogeController::preFilter()
     return true;
 }
 ``` 
-  
+
 When the preFilter() method returns false, the action will not be processed after this.
 If you would like to protect the access in many controllers, you can set it to preFilter() of ApplicationController class.ass.
  
