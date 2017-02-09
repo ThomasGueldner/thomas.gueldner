@@ -51,7 +51,7 @@ Alternatively, we could also write as follows.
 
 As you have seen so far, the session can be considered an “associative array (hash)" with the key value, the data string. The session itself is a single object, but we need somewhere for the saved (persisted) information in order to be able to carry it over between pages.
 
-In TreeFrog Framework, you can select one file, RDB (SqlObject), from cookies as the storage location for a session.  This is achieved by using the Session.StoreType setting in application.ini.
+In TreeFrog Framework, you can select one file, RDB (SqlObject), from cookies as the storage location for a session. This is achieved by using the Session.StoreType setting in application.ini.
  
 
 ## Set Cookie to a Location to Save the Session

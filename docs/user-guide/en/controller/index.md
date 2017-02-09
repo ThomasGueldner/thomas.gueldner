@@ -23,7 +23,7 @@ public slots:   // The action is defined here
     void baz(const QString &str);
      :
 ```
-  
+
 After that, carry on implementing in the same way as always.
  
 ## Determination of the Action
@@ -46,14 +46,14 @@ Here are some concrete examples. Actions from the BlogController class are calle
  /blog/show/foo/5  →  show(QString("foo"), QString("5"));  
 ```
 
-If the action name is omitted, then index action will be called by default.  In other words, like this.
+If the action name is omitted, then index action will be called by default. In other words, like this.
 
 ```
  /blog   →  index();
 ```  
  
-If the action corresponding to the requested URL is not defined, status code 500 (Internal Server Error) is returned to the browser.  
-  
+If the action corresponding to the requested URL is not defined, status code 500 (Internal Server Error) is returned to the browser.
+
 For each action that is called, the following process will be carried out in most cases;
 
 * scrutiny of the request
@@ -82,9 +82,9 @@ You can retrieve various data from here.
 
 An HTTP request sent from the client (browser) consists of a method, a header, and a body. Incoming data which is sent to be included is referred to in the following terms.
 
-* post data  -  data submitted from a form using the POST method
-* URL argument (query parameter)   -  data assigned to a URL argument after "?" as (format of key = value & …)
-* Action argument   -  data that has been granted after action (the 3 part of “/blog/edit/3”) ←see above.
+* post data - data submitted from a form using the POST method
+* URL argument (query parameter) - data assigned to a URL argument after "?" as (format of key = value & …)
+* Action argument - data that has been granted after action (the 3 part of “/blog/edit/3”) ←see above.
  
 The following example shows how to start to obtain post data in the controller.
 Let’s consider that you’ve made an input tag in the view. 
@@ -129,7 +129,7 @@ You can use the following method to the value of *mode* in *index* action of *bl
 
 ```
  QString val = httpRequest().queryItemValue("mode");
- // val = "normal"  
+ // val = "normal"
 ```
 
 By the way, if you want to get the data without specifying the URL argument and post data, you can use the allParameters() and methods() method parameter.
@@ -151,10 +151,10 @@ To pass variables to view, use the macros texport(variable) or T_EXPORT(variable
  texport(bar);
 ```
 
-**Note:** the variable must be specified as an argument to texport.  You can’t directly specify a string ("Hello world") or numbers (such as 100).
+**Note:** the variable must be specified as an argument to texport. You can’t directly specify a string ("Hello world") or numbers (such as 100).
 
-To use the variable in view, you must first declare the variable in tfetch  (Type, variable). Please see the view chapter for more information.
-  
+To use the variable in view, you must first declare the variable in tfetch (Type, variable). Please see the view chapter for more information.
+
 <span style="color: #a52a2a">In brief: Pass the object to the view by tfetch().</span>
  
 ### In the case of a user-defined class:
@@ -255,7 +255,7 @@ It is important to use the urla() method.
 ## To Display Messages in the Redirect Destination
 
 When redirection occurs, it is to another URL. This is because, from the point of view of the server, the URL receives a new destination, thus it has the effect of another action being called.
-  
+
 In the TreeFrog Framework, there is a mechanism to pass a message (variable) to the controller to which you have transferred in the redirect. See the following example which passes variables on tflash() method or T_FLASH() method.
 
 ```c++

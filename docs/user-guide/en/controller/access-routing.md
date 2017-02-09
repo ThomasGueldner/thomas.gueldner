@@ -30,7 +30,7 @@ void FooController::setAccessRules()
 ```
 
 Use allowUser() and allowGroup() to allow access, and define denyUser() and denyGroup() to deny access. The first argument specifies the group or user ID; the second argument specifies the list or action name (QStringList).
-  
+
 For permissions/denials from the user that do not define the access rules, the default settings will be used. Use setAllowDefault() method or setDenyDefault() method for this.
 
 ```c++

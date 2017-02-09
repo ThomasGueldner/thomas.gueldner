@@ -70,8 +70,8 @@ Case of Ubuntu :
   $ sudo make install
    ```
 
-   Note:  In order to debug the TreeFrog Framework itself, please use the configure option.
-   Run Type  
+   Note: In order to debug the TreeFrog Framework itself, please use the configure option.
+   Run Type
 
    ```
 ./configure --enable-debug
@@ -99,47 +99,47 @@ By specifying various options, you can customize to suit your environment.
 Options available on Windows using “Configure option” :
 
 ```
-> configure --help
-Usage: configure [OPTION]... [VAR=VALUE]...
-Configuration:
-  -h, --help          display this help and exit
-  --enable-debug      compile with debugging information
+ > configure --help
+ Usage: configure [OPTION]... [VAR=VALUE]...
+ Configuration:
+   -h, --help          display this help and exit
+   --enable-debug      compile with debugging information
 
-Installation directories:
-  --prefix=PREFIX     install files in PREFIX [C:\TreeFrog\x.x.x]
+ Installation directories:
+   --prefix=PREFIX     install files in PREFIX [C:\TreeFrog\x.x.x]
 ```
   
 Options available on Linux, and UNIX-like OS :
 
 ```
-$ ./configure --help
-Usage: ./configure [OPTION]... [VAR=VALUE]...
-Configuration:
-  -h, --help          display this help and exit
-  --enable-debug      compile with debugging information
+ $ ./configure --help
+ Usage: ./configure [OPTION]... [VAR=VALUE]...
+ Configuration:
+   -h, --help          display this help and exit
+   --enable-debug      compile with debugging information
 
-Installation directories:
-  --prefix=PREFIX     install files in PREFIX [/usr]
+ Installation directories:
+   --prefix=PREFIX     install files in PREFIX [/usr]
 
-Fine tuning of the installation directories:
-  --bindir=DIR        user executables [/usr/bin]
-  --libdir=DIR        object code libraries [/usr/lib]
-  --includedir=DIR    C header files [/usr/include/treefrog]
-  --datadir=DIR       read-only architecture-independent data [/usr/share/treefrog]
+ Fine tuning of the installation directories:
+   --bindir=DIR        user executables [/usr/bin]
+   --libdir=DIR        object code libraries [/usr/lib]
+   --includedir=DIR    C header files [/usr/include/treefrog]
+   --datadir=DIR       read-only architecture-independent data [/usr/share/treefrog]
 ```
  
 
 Options available in Max OS X :
 
 ```
-$ ./configure --help
-Usage: ./configure [OPTION]... [VAR=VALUE]...
-Configuration:
-  -h, --help          display this help and exit
-  --enable-debug      compile with debugging information
+ $ ./configure --help
+ Usage: ./configure [OPTION]... [VAR=VALUE]...
+ Configuration:
+   -h, --help          display this help and exit
+   --enable-debug      compile with debugging information
 
-Fine tuning of the installation directories:
-  --framework=PREFIX  install framework files in PREFIX [/Library/Frameworks]
-  --bindir=DIR        user executables [/usr/bin]
-  --datadir=DIR       read-only architecture-independent data [/usr/share/treefrog]
+ Fine tuning of the installation directories:
+   --framework=PREFIX  install framework files in PREFIX [/Library/Frameworks]
+   --bindir=DIR        user executables [/usr/bin]
+   --datadir=DIR       read-only architecture-independent data [/usr/share/treefrog]
 ```

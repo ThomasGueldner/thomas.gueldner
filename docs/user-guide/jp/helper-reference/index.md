@@ -1,4 +1,4 @@
 ---
-title: Helper Reference
+title: ヘルパーリファレンス
 id: 80_0
 ---

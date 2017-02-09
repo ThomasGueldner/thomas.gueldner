@@ -1,6 +1,8 @@
 ## Treefrog Framework
 
-## Useful Links
+This is the readMe. Here you can find useful links and information how to use Github Pages.
+
+### Useful Links
 
 [Show Github Page](https://thomasgueldner.github.io/thomas.gueldner/docs/)
 
@@ -19,3 +21,17 @@
 [Jekyll Basic Usage](http://jekyllrb.com/docs/usage/)
 
 [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+[Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables#)
+
+### Show Website in Browser
+
+```
+ localhost:4000
+```
+
+### Start Jekyll Server Command
+
+```
+ bundle exec jekyll serve
+```
