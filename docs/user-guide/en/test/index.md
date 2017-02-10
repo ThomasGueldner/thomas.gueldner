@@ -1,6 +1,6 @@
 ---
 title: Test
-id: 120_0
+page_id: "120.0"
 ---
 
 ## Test

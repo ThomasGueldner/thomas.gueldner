@@ -1,6 +1,6 @@
 ---
 title: Validation
-id: 80_3
+page_id: "080.030"
 ---
 
 ## Validation
@@ -62,7 +62,7 @@ setRule("title", Tf::Required, false);
 | DateTime     | DateTime format         |
 | Pattern      | Regular Expressions     |
 
-</div>
+</div><br>
 
 Once you have set the rules, you use them in the controller. Include the header file relating to this.
 This code validates the request data that is retrieved from the form. If you get a validation error, you get the error message.
@@ -83,7 +83,7 @@ Normally, since it should set multiple rules, there will also be multiple error 
 exportValidationErrors(valid, "err_");
 ``` 
  
-**In brief: Set the rule for the form data, and validate it by using validate().**
+ <span style="color: #b22222">**In brief: Set the rule for the form data, and validate it by using validate().** </span>
 
 ## Custom validation
 

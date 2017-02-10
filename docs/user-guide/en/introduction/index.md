@@ -1,6 +1,6 @@
 ---
 title: Introduction
-id: 10_0
+page_id: "010.0"
 ---
 
 ## Introduction

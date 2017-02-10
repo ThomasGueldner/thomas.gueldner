@@ -1,6 +1,6 @@
 ---
 title: Cookie
-id: 50_2
+page_id: "050.020"
 ---
 
 ## Cookie
@@ -20,7 +20,7 @@ When the relevant action occurs, the following functions are called, and the key
  addCookie("key1", "Hello world.");
 ```
 
-An expiration date can be set on the cookie. The cookie rides on the HTTP request, and is sent between server and browser. Once it reaches the expiration date the cookie is automatically erased from the browser, and disappears. This is specified in the third argument of addCookie() function expiration date. For more information, refer to the [API reference](/user-guide/en/api-reference/index.html){:target="_blank"}.
+An expiration date can be set on the cookie. The cookie rides on the HTTP request, and is sent between server and browser. Once it reaches the expiration date the cookie is automatically erased from the browser, and disappears. This is specified in the third argument of addCookie() function expiration date. For more information, refer to the [API reference](http://treefrogframework.org/tf_doxygen/classes.html){:target="_blank"}.
  
 ## Reading a String from a Cookie
 

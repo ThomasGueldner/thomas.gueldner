@@ -1,6 +1,6 @@
 ---
 title: Partitioning
-id: 60_4
+page_id: "060.040"
 ---
 
 ## Partitioning

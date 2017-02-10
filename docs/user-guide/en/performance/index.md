@@ -1,6 +1,6 @@
 ---
 title: Performance
-id: 160_0
+page_id: "160.0"
 ---
 
 ## Performance
@@ -40,7 +40,7 @@ The following comparisons use a sample application (blogapp) and the benchmark s
 
 The framework, individual requests, controller, model, DB, and view are all comprehensively checked. Since the DB cache system is not implemented (in the case of 0.54), an SQL query is called to the DB each time. 
 
-In the case of the thread module:
+In the case of the thread module:<br>
 **Parameter: MPM.thread.MaxServers=20**
 
 ```
@@ -114,4 +114,4 @@ Case of *prefork* module:
  
 In the prefork module, performance drops to about 40 requests per second. It is a significant drop, although, by careful tuning in a real implementation, you may obtain higher performance. We need to improve this in the next stage.
 
-**In brief: Use 'thread' as your MPM. If on Linux, use 'hybrid'.**
+<span style="color: #b22222">**In brief: Use 'thread' as your MPM. If on Linux, use 'hybrid'.**</span>

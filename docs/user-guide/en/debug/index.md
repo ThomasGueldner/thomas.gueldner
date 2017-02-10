@@ -1,6 +1,6 @@
 ---
 title: Debug
-id: 110_0
+page_id: "110.0"
 ---
 
 ## Debug
@@ -30,10 +30,10 @@ In the case of Linux/ Mac OS X:
 | Option                                                | Value                                          |
 |-------------------------------------------------------|------------------------------------------------|
 | Command                                               | tadpole                                        |
-| Command argument                                      | --debug -e dev (Absolute path of the app root) |
+| Command argument                                      | \--debug -e dev (Absolute path of the app root) |
 | LD_LIBRARY_PATH env variable<br>(not needed on Mac OS X) | Specify the *lib* directory of web application.  |
 
-</div>
+</div><br>
  
 <div class="center aligned">
 
@@ -46,11 +46,11 @@ In the case of Linux/ Mac OS X:
 | Option           | Value                                                                                                                                                                                |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Command          | tadpole**d**.exe                                                                                                                                                                         |
-| Command argument | --debug -e dev (Absolute path of the app root)                                                                                                                                       |
-| PATH variable    | Add TreeFrog's bin directory C:\TreeFrog\x.x.x\bin at the beginning.Also, if you use something like MySQL or PostgreSQL, the directoryincluding the client DLL should also be added. |
+| Command argument | \--debug -e dev (Absolute path of the app root)                                                                                                                                       |
+| PATH variable    | Add TreeFrog's bin directory C:\TreeFrog\x.x.x\bin at the beginning. Also, if you use something like MySQL or PostgreSQL, the directoryincluding the client DLL should also be added. |
 | TFDIR variable   | The TreeFrog directory is set, c:\TreeFrog\x.x.x.                                                                                                                                    |
 
-</div>
+</div><br>
 
 - x.x.x is the version of TreeFrog.
 
@@ -73,21 +73,21 @@ Import the source code of the application file to Qt Creator. Then click [File] 
 Now we will run the settings screen for debugging.
 The last of the tadpole command arguments, specifies -e option and the application route’s absolute path. You may remember that the -e option is the setting for switching the DB environment. Let's assume you choose dev.
  
-In the case of Linux :
+In the case of Linux:<br>
 In the next screen we choose /var/tmp/blogapp as the application root.
 
 ![QtCreator runenv](http://www.treefrogframework.org/wp-content/uploads/QtCreator-runenv(1).png "QtCreator runenv")
  
-In Windows :
+In Windows:<br>
 We can set the content in two ways by building the configuration screen and by implementing the configuration screen.
 
 Example of build configuration: (sorry for only having Japanese images for this demonstration...)
 
-![QtCreator build settings window](http://www.treefrogframework.org/wp-content/uploads/2012/12/QtCreator-build-settings-win.png "QtCreator build settings window")
+![QtCreator build settings window 1](http://www.treefrogframework.org/wp-content/uploads/2012/12/QtCreator-build-settings-win.png "QtCreator build settings window 1")
 
 And an example of run configuration :
 
-![QtCreator build settings window](http://www.treefrogframework.org/wp-content/uploads/QtCreator-run-settings-win.png "QtCreator build settings window")
+![QtCreator build settings window 2](http://www.treefrogframework.org/wp-content/uploads/QtCreator-run-settings-win.png "QtCreator build settings window 2")
 
 That is all about the configuration settings.
 When adding a breakpoint to the source code, always try to access it from your Web browser.

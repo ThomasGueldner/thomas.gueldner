@@ -1,6 +1,6 @@
 ---
 title: O/R Mapping
-id: 60_1
+page_id: "060.010"
 ---
 
 ## O/R Mapping
@@ -39,7 +39,7 @@ As we proceed with the description, let's check the correspondence of terms betw
 | Object             | Record |
 | Property           | Field  |
 
-</div>
+</div><br>
 
 ## Database Connection Information
 
@@ -59,7 +59,7 @@ Parameters that can be set are as follows.
 | password       | Password                                                                       |
 | connectOptions | Connect options<br>Refer to Qt documentation [QSqlDatabase::setConnectOptions()](http://doc.qt.io/qt-5/qsqldatabase.html){:target="_blank"} |
 
-</div>
+</div><br>
 
 In this way, when you start a Web application, the system will manage the database connection automatically. As the developer, you don’t need to make the process of opening or closing the database.
 
@@ -142,7 +142,7 @@ crt.addOr(BlogObject::CreatedAt, TSql::GreaterThan, dt);  // OR add to the end o
 
 If you add a condition in addOr() method, conditions clause is enclosed in parentheses. If you use a combination of add() and addOr() methods, take care about the order in which they are called.
 
-<span style="color: #b22222">NOTE</span>
+<span style="color: #b22222">**NOTE** </span>
 
 Remember, when using AND and OR operators, that the AND operator has priority in being evaluated.
 
@@ -221,7 +221,7 @@ For saving date and time of creation, you can use the field name called *created
 | Saving the date and time of creation     | created_at                |
 | Saving the date and time of modification | updated_at OR modified_at |
 
-</div>
+</div><br>
 
 The facility to store the date and time automatically is also in the database itself. My recommendation is that, even though it can be done quite well in the database, it’s better to do it in the framework.
 
@@ -235,4 +235,4 @@ Prepare a field named lock revision in advance to record, and continue recording
 
 To take advantage of optimistic locking in SqlObject, add an integer type field named lock_revision to the table. It generates a class using the generator. With this alone, optimistic locking is activated when you call TSqlObject::remove() method and TSqlObject::update() method.
 
-**In brief: In the table, make a field named lock_revision from type integer.**
+<span style="color: #b22222">**In brief: In the table, make a field named lock_revision from type integer.** </span>

@@ -1,6 +1,6 @@
 ---
 title: Pagination
-id: 80_8
+page_id: "080.080"
 ---
 
 ## Pagination

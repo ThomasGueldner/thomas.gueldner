@@ -1,6 +1,6 @@
 ---
 title: JSON/XML Response
-id: 50_5
+page_id: "050.050"
 ---
 
 ## JSON/XML Response
@@ -28,7 +28,7 @@ Sending All Blog Objects in List Format
 
 This is also simple! However, please note that if there are a large number of records in the blog database, results could be unexpected.
 
-In addition to this, the following methods are available. Please check this, because there is little information on the [API reference](/user-guide/en/api-reference/index.html){:target="_blank"}.
+In addition to this, the following methods are available. Please check this, because there is little information on the [API reference](http://treefrogframework.org/tf_doxygen/classes.html){:target="_blank"}.
 
 ```c++
  bool renderJson(const QJsonDocument &document);

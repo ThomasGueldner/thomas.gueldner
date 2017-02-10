@@ -1,6 +1,6 @@
 ---
 title: View
-id: 70_0
+page_id: "070.0"
 ---
 
 ## View

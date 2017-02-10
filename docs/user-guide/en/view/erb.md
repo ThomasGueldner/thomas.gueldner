@@ -1,6 +1,6 @@
 ---
 title: ERB
-id: 70_1
+page_id: "070.010"
 ---
 
 ## ERB
@@ -43,7 +43,7 @@ Template files that you like can be added. Once you have added a new one, run th
 
 Remember to reflect the new template that you’ve added in the shared library.
 
-**In brief: After you add a template file use "make qmake".**
+<span style="color: #b22222">**In brief: After you add a template file use "make qmake".** </span>
 
 ## To Output a String
 
@@ -94,7 +94,7 @@ You might ask if fetch processing has to be processed each time of using, but yo
 
 The fetched object is a local variable in a function. Therefore, if we fetched the same object twice, because the variables are the same we would have defined twice, giving an error at compile time. Of course, it would not be a compile-time error if we divided the block, but it probably would not make much sense to do so.
 
-**In brief: Use the fetch case only once.**
+<span style="color: #b22222">**In brief: Use the fetch case only once.** </span>
 
 If you export objects of the type int and QString type, then you can only output in the tehex() function. Fetch processing eliminates the need for it to be this way.
 
@@ -119,7 +119,7 @@ Similarly, <% techoex(..); %> can be rewritten in the notation <==$ .. %>.
 
 To sum up, to export an object of int type or QString type, I think it’s better to output using the notation <=$ .. %>, unless you want to output just once (in which case, use the fetch process ).
 
-**In brief: Use <=$ .. %> to export objects that do not output only once.**
+<span style="color: #b22222">**In brief: Use <=$ .. %> to export objects that do not output only once.** </$>
 
 ## How to Write Comments
 
@@ -176,7 +176,7 @@ To create an \<a\> tag, use the linkTo() method.
  <a href="/Blog/index">Back</a>
 ```
 
-In the linkTo() method, other arguments can be specified; see the [API reference](/user-guide/en/api-reference/index.html){:target="_blank"} for more information.
+In the linkTo() method, other arguments can be specified; see the [API reference](http://treefrogframework.org/tf_doxygen/classes.html){:target="_blank"} for more information.
 
 You could also use the url() method to specify a URL. Specify the controller name, with the url as the first argument, and the action name as the second argument.
 
@@ -230,7 +230,7 @@ If there is more than one attribute, use '\|' operator.
  
 By the way, there is the anchor() method, that aliases the linkTo() method; they can be used in exactly the same way.
 
-In addition, many other methods are available, see the [API Document](/user-guide/en/api-reference/index.html){:target="_blank"}
+In addition, many other methods are available, see the [API Document](http://treefrogframework.org/tf_doxygen/classes.html){:target="_blank"}
 
 ## Form
 
@@ -285,7 +285,7 @@ The important part here is the line; <%== yield(); %>. This line outputs the con
  
 By using a layout like this, you can put together a common design, such as headers and footers, for the site. Changing the design of the site then becomes much easier, because all you need to change is the layout.
 
-**In brief: Layout is the overall outline for the site design.**
+<span style="color: #b22222">**In brief: Layout is the overall outline for the site design.** </span>
 
 Now, I will describe each method to set the layout.
 
@@ -335,4 +335,4 @@ From the fact that both are types of merging, the layout and partial template sh
 
 My opinion is that it is good way to define the layout for sections such as footer and header that are always present on the page, and to use additional partial templates to display the parts that are often but not always displayed on the page.
 
-**In brief: Define areas of your layout that have persistent and not persistent content and put them into partial templates.**
+<span style="color: #b22222">**In brief: Define areas of your layout that have persistent and not persistent content and put them into partial templates.** </span>

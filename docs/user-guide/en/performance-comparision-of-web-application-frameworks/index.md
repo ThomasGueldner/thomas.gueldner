@@ -1,6 +1,6 @@
 ---
 title: Performance Comparison of Web Application Frameworks
-id: 150_0
+page_id: "150.0"
 ---
 
 ## Performance Comparison of Web Application Frameworks
@@ -106,7 +106,7 @@ With all that in mind, I would like to show the result of top command under load
 
 **Top command screen when TreeFrog Framework has high load:**
 
-![Top Command Screen](http://www.treefrogframework.org/wp-content/uploads/2012/07/snapshot2-2.png "Top Command Screen")
+![Top Command Screen 1](http://www.treefrogframework.org/wp-content/uploads/2012/07/snapshot2-2.png "Top Command Screen 1")
 
 **Top command screen when Codeigniter has high load:**
 

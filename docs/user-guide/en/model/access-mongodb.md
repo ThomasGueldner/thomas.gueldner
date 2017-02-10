@@ -1,6 +1,6 @@
 ---
 title: Access MongoDB
-id: 60_5
+page_id: "060.050"
 ---
 
 ## Access MongoDB
@@ -19,7 +19,7 @@ Here is a comparison between the layered structures of an RDB and MongoDB.
 | Collection | Table    |               |
 | Document   | Record   |               |
 
-</div>
+</div><br>
 
 TreeFrog Framework has been designed to respond to MongoDB in its current trial version. Please first understand that what has been described here may therefore change in future versions
 

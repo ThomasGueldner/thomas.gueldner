@@ -1,6 +1,6 @@
 ---
 title: Image Manipulation
-id: 80_7
+page_id: "080.070"
 ---
 
 ## Image Manipulation

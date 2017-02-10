@@ -1,6 +1,6 @@
 ---
 title: License
-id: 10_2
+page_id: "010.020"
 ---
 
 ## License

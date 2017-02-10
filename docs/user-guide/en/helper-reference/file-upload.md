@@ -1,6 +1,6 @@
 ---
 title: File Upload
-id: 80_1
+page_id: "080.010"
 ---
 
 ## File Upload
@@ -61,10 +61,10 @@ To receive the uploaded file in the upload action, you can access the two files 
 
 ```c++
 QList<TMimeEntity> lst = httpRequest().multipartFormData().entityList( "picture[]" );
-  for (QListIterator<TMimeEntity> it(lst); it.hasNext(); ) {
+for (QListIterator<TMimeEntity> it(lst); it.hasNext(); ) {
     TMimeEntity e = it.next();
     QString oname = e.originalFileName();   // original name
     e.renameUploadedFile("dst_path..");     // rename file
-     ...
+      :
 }
 ```

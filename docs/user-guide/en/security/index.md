@@ -1,6 +1,6 @@
 ---
 title: Security
-id: 100_0
+page_id: "100.0"
 ---
 
 ## Security
@@ -45,7 +45,7 @@ In order to turn on the CSRF protection, you need to set the following in the *a
 
 I would recommend that you turn this feature off during the development of the application.
 
-**In brief: Generate a form tag using the formTag() method.**
+<span style="color: #b22222">**In brief: Generate a form tag using the formTag() method.** </span>
  
 ## Session Hijacking Prevention
 
@@ -55,4 +55,4 @@ In the TreeFrog Framework, as a defense against session hijacking, a new session
 
 Although guessing a session ID is difficult, a more serious threat is possible eavesdropping on the network. To counter this, it is possible to encrypt (SSL) the communication channel by reverse proxy (such as nginx or Apache).
 
-**In brief: Encrypt by SSL all sites where important information is being dealt with.**
+<span style="color: #b22222">**In brief: Encrypt by SSL all sites where important information is being dealt with.** </span>

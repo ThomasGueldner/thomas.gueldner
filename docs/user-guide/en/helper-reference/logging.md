@@ -1,6 +1,6 @@
 ---
 title: Logging
-id: 80_5
+page_id: "080.050"
 ---
 
 ## Logging
@@ -16,7 +16,7 @@ Your Web application will log four outputs as follows.
 | TreeFrog log | treefrog.log | Logging of the TreeFrog system. System outputs, such as errors, are logged here.                                                                                                                                                   |
 | Query log    | query.log    | Query log issued to the database. Specify the file name in the file value of SqlQueryLog in the configuration file. When stopping the output, flush it. Because there is overhead when the log is outputting. It is a good idea to stop the output when you operate a formal Web application. |
 
-</div>
+</div><br>
 
 ## Output of the Application Log
 
@@ -47,7 +47,7 @@ Line feed code is not required at the end of the format string.
 
 It is possible to change the layout of the log output, by setting FileLogger.Layout parameters in the configuration file *logger.ini*.
 
-```c++
+```ini
 # Specify the layout of FileLogger.
 #  %d : date-time
 #  %p : priority (lowercase)
@@ -64,7 +64,7 @@ FileLogger.Layout="%d %5P [%t] %m%n"
 When a log was generated, date and time will be inserted there and tagged with '%d' in the log layout.
 The date format is specified in the FileLogger.DateTimeFormat parameter. The format that can be specified is the same value to the argument of QDateTime::toString(). Please refer to the [Qt document](http://doc.qt.io/qt-5/qdatetime.html){:target="_blank"} for further detail. 
 
-```c++
+```ini
 # Specify the date-time format of FileLogger, see also QDateTime
 # class reference.
 FileLogger.DateTimeFormat="yyyy-MM-dd hh:mm:ss"
@@ -74,11 +74,11 @@ FileLogger.DateTimeFormat="yyyy-MM-dd hh:mm:ss"
 
 You can set the log output level using the following parameter in logger.ini.
 
-```
+```ini
 # Outputs the logs of equal or higher priority than this.
 FileLogger.Threshold=debug
 ```
 
 In this example, the log level is higher than debug.
 
-**In brief: Using the tDebug() function to output the debug log (necessary for development).**
+<span style="color: #b22222">**In brief: Using the tDebug() function to output the debug log (necessary for development).** </span>

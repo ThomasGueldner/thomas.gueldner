@@ -1,6 +1,6 @@
 {% assign rootLength = include.root | size %}
 {% assign rootComponentsLength = include.root | split: '/' | size %}
-{% assign sortedPages = site.html_pages | sort: 'id', 'last' %}
+{% assign sortedPages = site.html_pages | sort: 'page_id', 'last' %}
 {% assign lastPath = nil %}
 {% assign depth = 0 %}
 {% assign depthAttr = include.depthAttr | default: "data-menu-depth" %}

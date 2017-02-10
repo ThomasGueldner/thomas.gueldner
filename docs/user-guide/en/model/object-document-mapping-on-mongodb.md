@@ -1,6 +1,6 @@
 ---
 title: Object-Document Mapping on MongoDB
-id: 60_6
+page_id: "060.060"
 ---
 
 ## Object-Document Mapping on MongoDB

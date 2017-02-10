@@ -1,6 +1,6 @@
 ---
 title: Generator
-id: 40_0
+page_id: "040.0"
 ---
 
 ## Generator
@@ -45,7 +45,7 @@ See this example:
  
 If you want to use SQLite for the database, you should make the database file in the application root directory. You can set the database information in the configuration file (database.ini). The generator command refers to the information that is set in the dev section.
 
-```
+```ini
 [dev]
 driverType=QMYSQL
 databaseName=blogdb
@@ -74,7 +74,7 @@ connectOptions=
 | password       | Password           |                                                                                                                                                                                                                      |
 | connectOptions | Connection options | For more information see Qt documents:<br>[QSqlDatabase::setConnectOptions()](http://doc.qt.io/qt-5/qsqldatabase.html){:target="_blank"}                                                                                                                                             |
 
-</div>
+</div><br>
 
 
 If the database driver is not included in the Qt SDK, you will not be able to access the database. If you have not yet built, you should incorporate the driver by reference to the FAQ. Alternatively, you can download the database driver from the [download page](http://www.treefrogframework.org/download){:target="_blank"}, and then install it.
@@ -93,7 +93,8 @@ Database open successfully
   ：
 ```
 
-<span style="color: #a52a2a">In Brief: Define the schema in the database, and make the scaffolding with the generator command.</span>
+<br>
+<span style="color: #b22222">**In brief: Define the schema in the database, and make the scaffolding with the generator command.** </span>
  
 ### Relationship of model-name/controller-name and table name
 
@@ -139,7 +140,7 @@ Agreed?
 
 TreeFrog has a class naming and file naming convention. With the generator, class or file names are generated under the following terms and conditions.
 
-### Convention for Naming of Controllers
+#### Convention for Naming of Controllers
 
 The class name of the controller is "table name + Controller". Always begin with an upper-case letter, do not use the underscore ('_') to separate words but capitalize the first letter after where the separator would be.
 The following class names are good examples:
@@ -150,7 +151,7 @@ The following class names are good examples:
 These files are stored in the controller’s directory. File names in that case will be something that you want to be in all lowercase; the class name plus the relevant extension (.cpp or .h).
  
 
-Conventions for Naming Models
+#### Conventions for Naming Models
 
 In the same manner as with the controller, model names should always begin with a capital letter, erase the underscore ('_') to separate words but capitalize the first letter after where the separator would be. For example, class names such as the following.
 
@@ -161,19 +162,24 @@ These files are stored in the models directory. As well as the controller, the f
 It does not convert the singular-plural form of words, as Rails does.
  
 
-### View Naming Conventions
+#### View Naming Conventions
 
 Template files are generated with the file name "action name + extension" all in lower case, in the 'views/controller name" directory. The extension used depends on the template system.
 Also, when you build the view, and then output the source file in views/_src directory they are converted to C++ code templates. When these are compiled, a shared library view is created.
  
 
-### CRUD
+#### CRUD
 
 CRUD covers the four major functions found in a Web application. The name comes from taking the initial letters of "Create (generate)," "Read (Read)", "Update (update)", and "Delete (Delete)".
 When you create a scaffolding, the generator command generates the naming code in the next.
  
+<div class="center aligned">
 
 **CRUD Correspondence Table**
+
+</div>
+
+<div class="table-div">
 
 |       | Action    | Model     | ORM       | SQL       |
 | ----- |-----------|-----------|-----------|-----------|
@@ -182,7 +188,9 @@ When you create a scaffolding, the generator command generates the naming code i
 | U	    | save	    | save()<br>update() | update()	| UPDATE    |
 | D	    | remove	| remove()	| remove()	| DELETE    |
 
-### About the T_CONTROLLER_EXPORT Macro
+</div><br>
+
+## About the T_CONTROLLER_EXPORT Macro
 
 The controller class that you created in the generator, will have added a macro called T_CONTROLLER_EXPORT.
 

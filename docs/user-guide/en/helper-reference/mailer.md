@@ -1,6 +1,6 @@
 ---
 title: Mailer
-id: 80_4
+page_id: "080.040"
 ---
 
 ## Mailer
@@ -22,12 +22,12 @@ The class of InformationMailer is created in the controller directory, and a tem
 Next, open the *mail.erb* that was created, and then save as the following content.
 
 ```
-Subject: Test Mail
-To: <%==$ to %>
-From: foo@example.com
+ Subject: Test Mail
+ To: <%==$ to %>
+ From: foo@example.com
    
-Hi,
-This is a test mail.
+ Hi,
+ This is a test mail.
 ```
 
 Above the blank line is the mail header, and below is the content of the body. Specify subject and destination in the header. It is possible to add any field of header. However, Content-Type and Date field are automatically added, so that you don’t need to write them there.

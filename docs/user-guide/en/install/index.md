@@ -1,6 +1,6 @@
 ---
 title: Install
-id: 20_0
+page_id: "020.0"
 ---
 
 ## Install
@@ -56,7 +56,7 @@ Case of Ubuntu :
   > mingw32-make install
    ```
 
-   In UNIX-based OS Linux, and Mac OS X :   
+   In UNIX-based OS Linux, and Mac OS X:   
    Enter the following from the command line.
 
    ```
@@ -74,7 +74,7 @@ Case of Ubuntu :
    Run Type
 
    ```
-./configure --enable-debug
+  ./configure --enable-debug
    ```
 
    Updates dynamic linker runtime bindings in Linux only.
@@ -127,7 +127,6 @@ Options available on Linux, and UNIX-like OS :
    --includedir=DIR    C header files [/usr/include/treefrog]
    --datadir=DIR       read-only architecture-independent data [/usr/share/treefrog]
 ```
- 
 
 Options available in Max OS X :
 

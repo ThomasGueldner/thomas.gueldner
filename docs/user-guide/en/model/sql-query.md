@@ -1,6 +1,6 @@
 ---
 title: SQL Query
-id: 60_2
+page_id: "060.020"
 ---
 
 ## SQL Query
@@ -39,7 +39,7 @@ while (query.next()) {
 
 The same method can be used for the TSqlQuery class because it inherits the [QSqlQuery class](http://doc.qt.io/qt-4.8/qsqlquery.html){:target="_blank"} of Qt.
 
-**In brief: Queries can be generated using placeholders in all cases.**
+<span style="color: #b22222">**In brief: Queries can be generated using placeholders in all cases.** </span>
 
 In fact, you can see in the [query log](/user-guide/en/helper-reference/logging.html){:target="_blank"} any query that has been executed.
 

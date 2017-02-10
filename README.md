@@ -35,3 +35,9 @@ This is the readMe. Here you can find useful links and information how to use Gi
 ```
  bundle exec jekyll serve
 ```
+
+### Start Jekyll Server Command with specific IP address
+
+```
+ bundle exec jekyll serve --host xxx.xxx.xxx.xxx
+```

@@ -1,6 +1,6 @@
 ---
 title: Controller
-id: 50_0
+page_id: "050.0"
 ---
 
 ## Controller
@@ -155,7 +155,7 @@ To pass variables to view, use the macros texport(variable) or T_EXPORT(variable
 
 To use the variable in view, you must first declare the variable in tfetch (Type, variable). Please see the view chapter for more information.
 
-<span style="color: #a52a2a">In brief: Pass the object to the view by tfetch().</span>
+<span style="color: #b22222">**In brief: Pass the object to the view by tfetch().** </span>
  
 ### In the case of a user-defined class:
 
@@ -192,7 +192,7 @@ After processing the business logic returns the result of the process as an HTML
 
 If you want to return a response with a different template, specify the action name as an argument action. The layout file name can be specified as a layout argument.
 
-<span style="color: #a52a2a">In Brief: To render the template, use render().</span>
+<span style="color: #b22222">**In brief: To render the template, use render().** </span>
 
 ### Layout
 

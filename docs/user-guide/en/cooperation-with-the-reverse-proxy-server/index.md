@@ -1,6 +1,6 @@
 ---
 title: Cooperation with the Reserve Proxy Server
-id: 140_0
+page_id: "140.0"
 ---
 
 ## Cooperation with the Reverse Proxy Server
@@ -10,7 +10,7 @@ The TreeFrog Framework provides an application server (AP server) to send back t
 As it stands, this is sufficient for small and medium-sized Web sites. However, when making a large Web site system, in order to achieve stable operation and load balance it becomes necessary to use a Web server (reverse proxy) system such as nginx or Apache.
 Also, if you want to work with compression response and SSL, you must set up a Web server separately.
 
-**In brief: For large scale sites, set up the web server.**
+<span style="color: #b22222">**In brief: For large scale sites, set up the web server.** </span>
 
 <div class="center aligned">
 
@@ -26,7 +26,7 @@ Also, if you want to work with compression response and SSL, you must set up a W
 | AP server (TreeFrog)       | Generating and sending dynamic contents (static contents)                         |
 | DB server (RDB)            | Data store, persistence                                                           |
 
-</div>
+</div><br>
 
 I'll not go into detail about reverse proxy configuration for Apache and nginx, since a great deal of information is readily available on the internet. The basic idea is that reverse proxy listens on port 80, with requests being transferred to the application server as they are received. Of course, the application server should be assigned a port number that does not duplicate other services. Use the *ListenPort* parameter in the *application.ini* file to set the port number.
 
@@ -38,21 +38,21 @@ For settings corresponding to the UNIX domain socket server application, perform
  ListenPort=unix:/tmp/foo
 ```
 
-– Please change the file name as necessary.
+- Please change the file name as necessary.
  
 For example, in order to make a reverse proxy to a UNIX domain socket in nginx, add the following entry:
 
 ```
- upstream backend {
-      server unix:/tmp/foo;
- }
- server {
-         listen 80;
-         server_name localhost;
-         location / {
-             proxy_pass        http://backend;
-         }
- }
+upstream backend {
+    server unix:/tmp/foo;
+}
+server {
+    listen 80;
+    server_name localhost;
+    location / {
+        proxy_pass        http://backend;
+    }
+}
 ```
  
 Then all you should need to do is to save the setting.
