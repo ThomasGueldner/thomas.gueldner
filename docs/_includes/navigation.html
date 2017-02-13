@@ -1,20 +1,15 @@
 <h4 class="widget-title">Languages</h4>
 <ul>
-{{site.baseurl }}
-{{site.github.url }}
 {% if site.url contains '/jp/' %}
     <li><a href="{{ site.url }}" class="language-link">日本語 (Japanese)</a></li>
-    {% assign en_url = site.url | prepend: site.baseurl %}
     {% if site.url contains '/user-guide/' %}
-        {% assign en_url = en_url | replace: '/jp/', '/en/' %}
+        {% assign en_url = site.url | replace: '/jp/', '/en/' %}
     {% else %}
-        {% assign en_url = en_url | replace: '/jp/', '' %}
+        {% assign en_url = site.url | replace: '/jp/', '' %}
     {% endif %}
     <li><a href="{{ en_url }}" class="language-link">English</a></li>
 {% elsif site.url contains '/en/' %} 
-    {% assign jp_url = site.url | prepend: site.baseurl %}
-    {% assign en_url = site.url | prepend: site.baseurl %}
-    {% assign jp_url = jp_url | replace: '/en/', '/jp/' %}
+    {% assign jp_url = site.url | replace: '/en/', '/jp/' %}
     <li><a href="{{ jp_url }}" class="language-link">日本語 (Japanese)</a></li>
     <li><a href="{{ en_url }}" class="language-link">English</a></li>
 {% else %} 
