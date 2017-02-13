@@ -22,10 +22,10 @@
 </ul>
 <h4 class="widget-title">Users Guide</h4>
 {% if site.url contains '/jp/' %}
-    {% include generateDynamicMenu.html root="site.github.url/user-guide/jp" %}
+    {% include generateDynamicMenu.html root="/user-guide/jp" %}
 {% elsif site.url contains '/en/' %}   
-    {% include generateDynamicMenu.html root="site.github.url/user-guide/en" %}
+    {% include generateDynamicMenu.html root="/user-guide/en" %}
 {% else %} 
-    {% include generateDynamicMenu.html root="site.github.url/user-guide/en" %}
+    {% include generateDynamicMenu.html root="/user-guide/en" %}
 {% endif %}
 <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
