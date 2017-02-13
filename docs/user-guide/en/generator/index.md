@@ -42,7 +42,7 @@ See this example:
 ```sql
 > CREATE TABLE blog (id INTEGER PRIMARY KEY, title VARCHAR(20), body VARCHAR(200));
 ```
- 
+
 If you want to use SQLite for the database, you should make the database file in the application root directory. You can set the database information in the configuration file (database.ini). The generator command refers to the information that is set in the dev section.
 
 ```ini
@@ -64,18 +64,17 @@ connectOptions=
 
 <div class="table-div">
 
-| Item           | Meaning            | Remarks                                                                                                                                                                                                              |
-|----------------|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Item           | Meaning            | Remarks                                                                                                                                  |
+|----------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | driverType     | Driver name        | Choices are as follows:<br>- QDB2: IBM DB2<br>- QIBASE: Borland InterBase Driver<br>- QMYSQL: MySQL Driver<br>- QOCI: Oracle Call Interface Driver<br>- QODBC: ODBC Driver<br>- QPSQL: PostgreSQL Driver<br>- QSQLITE: SQLite version 3 or above |
-| databaseName   | Database name      | In the case of SQLite a file path must be specified.<br>Example: db/blogdb                                                                                                                                              |
-| hostName       | Host name          | *localhost* in the case of blank                                                                                                                                                                                     |
-| port           | Port number        | The default port if blank                                                                                                                                                                                            |
-| userName       | User name          |                                                                                                                                                                                                                      |
-| password       | Password           |                                                                                                                                                                                                                      |
-| connectOptions | Connection options | For more information see Qt documents:<br>[QSqlDatabase::setConnectOptions()](http://doc.qt.io/qt-5/qsqldatabase.html){:target="_blank"}                                                                                                                                             |
+| databaseName   | Database name      | In the case of SQLite a file path must be specified.<br>Example: db/blogdb |
+| hostName       | Host name          | *localhost* in the case of blank |
+| port           | Port number        | The default port if blank |
+| userName       | User name          |     |
+| password       | Password           |     |
+| connectOptions | Connection options | For more information see Qt documents:<br>[QSqlDatabase::setConnectOptions()](http://doc.qt.io/qt-5/qsqldatabase.html){:target="_blank"} |
 
 </div><br>
-
 
 If the database driver is not included in the Qt SDK, you will not be able to access the database. If you have not yet built, you should incorporate the driver by reference to the FAQ. Alternatively, you can download the database driver from the [download page](http://www.treefrogframework.org/download){:target="_blank"}, and then install it.
 
