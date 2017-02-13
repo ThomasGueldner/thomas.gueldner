@@ -7,6 +7,7 @@ github: [metadata]
 gems: [markdown]
 theme: jekyll-theme-slate
 baseurl: /thomas.gueldner
+url: /thomas.gueldner
 
 # Server
 source: docs
