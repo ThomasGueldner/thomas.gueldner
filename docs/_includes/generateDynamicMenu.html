@@ -64,7 +64,7 @@
 
     {% assign depth = nextPathLength | minus: rootComponentsLength %}
     <li class="menuItem">
-        <a href="{{ sortedPage.url }}" class="{% if page.url == sortedPage.url %}activeMenuItem {% else %}menuItemLink{% endif %}">
+        <a href="{{ site.github.url }}{{ sortedPage.url }}" class="{% if page.url == sortedPage.url %}activeMenuItem {% else %}menuItemLink{% endif %}">
       {{ sortedPage.title }}
         </a>
     {% assign lastPath = nextPath %}
