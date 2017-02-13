@@ -1,13 +1,18 @@
-encoding: utf-8
-name: Treefrog Framework
-markdown: kramdown
+name: 		Treefrog Framework
+markdown: 	kramdown
+
 kramdown:  
   parse_block_html: true
-github: [metadata]
-gems: [markdown]
-theme: jekyll-theme-slate
-url: https://thomasgueldner.github.io
+
+github: 	[metadata]
+gems: 		[markdown]
+theme: 		jekyll-theme-slate
+url: 		https://thomasgueldner.github.io
+
+sass:
+    sass_dir: _sass/
 
 # Server
-source: docs
-port: 4000
+source: 	docs
+port: 		4000
+encoding: 	utf-8
