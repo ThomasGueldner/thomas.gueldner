@@ -1,26 +1,26 @@
 <h4 class="widget-title">Languages</h4>
 <ul>
-{% if site.url contains '/jp/' %}
-    <li><a href="{{ site.url }}" class="language-link">日本語 (Japanese)</a></li>
-    {% if site.url contains '/user-guide/' %}
-        {% assign en_url = site.url | replace: '/jp/', '/en/' %}
+{% if site_url contains '/jp/' %}
+    <li><a href="{{ site_url }}" class="language-link">日本語 (Japanese)</a></li>
+    {% if site_url contains '/user-guide/' %}
+        {% assign en_url = site_url | replace: '/jp/', '/en/' %}
     {% else %}
-        {% assign en_url = site.url | replace: '/jp/', '' %}
+        {% assign en_url = site_url | replace: '/jp/', '' %}
     {% endif %}
     <li><a href="{{ en_url }}" class="language-link">English</a></li>
-{% elsif site.url contains '/en/' %} 
-    {% assign jp_url = site.url | replace: '/en/', '/jp/' %}
+{% elsif site_url contains '/en/' %} 
+    {% assign jp_url = site_url | replace: '/en/', '/jp/' %}
     <li><a href="{{ jp_url }}" class="language-link">日本語 (Japanese)</a></li>
-    <li><a href="{{ site.url }}" class="language-link">English</a></li>
+    <li><a href="{{ site_url }}" class="language-link">English</a></li>
 {% else %} 
     <li><a href="/jp" class="language-link">日本語 (Japanese)</a></li>
     <li><a href="/" class="language-link">English</a></li>
 {% endif %}
 </ul>
 <h4 class="widget-title">Users Guide</h4>
-{% if site.url contains '/jp/' %}
+{% if site_url contains '/jp/' %}
     {% include generateDynamicMenu.html root="/user-guide/jp" %}
-{% elsif site.url contains '/en/' %}   
+{% elsif site_url contains '/en/' %}   
     {% include generateDynamicMenu.html root="/user-guide/en" %}
 {% else %} 
     {% include generateDynamicMenu.html root="/user-guide/en" %}
