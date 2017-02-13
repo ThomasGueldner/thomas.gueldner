@@ -9,5 +9,5 @@ theme: jekyll-theme-slate
 # baseurl: /docs
 
 # Server
-source:       docs
-port:         4000
+# source:       docs
+# port:         4000
