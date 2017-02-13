@@ -6,7 +6,7 @@ kramdown:
 github: [metadata]
 gems: [markdown]
 theme: jekyll-theme-slate
-baseurl: /thomas.gueldner
+baseurl: /thomas.gueldner/docs
 
 # Server
 source:       docs
