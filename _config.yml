@@ -6,7 +6,3 @@ kramdown:
 github: [metadata]
 gems: [markdown]
 theme: jekyll-theme-slate
-
-# Server
-source:       docs
-port:         4000
