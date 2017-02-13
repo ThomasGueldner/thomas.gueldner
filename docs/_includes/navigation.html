@@ -1,17 +1,17 @@
 <h4 class="widget-title">Languages</h4>
 <ul>
-{% if page.url contains '/jp/' %}
-    <li><a href="{{ page.url }}" class="language-link">日本語 (Japanese)</a></li>
-    {% assign url = page.url | prepend: site.github.url %}
-    {% if page.url contains '/user-guide/' %}
+{% if post.url contains '/jp/' %}
+    <li><a href="{{ post.url }}" class="language-link">日本語 (Japanese)</a></li>
+    {% assign url = post.url | prepend: site.github.url %}
+    {% if post.url contains '/user-guide/' %}
         {% assign en_url = url | replace: '/jp/', '/en/' %}
     {% else %}
         {% assign en_url = url | replace: '/jp/', '' %}
     {% endif %}
     <li><a href="{{ en_url }}" class="language-link">English</a></li>
-{% elsif page.url contains '/en/' %} 
-    {% assign jp_url = page.url | prepend: site.github.url %}
-    {% assign en_url = page.url | prepend: site.github.url %}
+{% elsif post.url contains '/en/' %} 
+    {% assign jp_url = post.url | prepend: site.github.url %}
+    {% assign en_url = post.url | prepend: site.github.url %}
     {% assign jp_url = jp_url | replace: '/en/', '/jp/' %}
     <li><a href="{{ jp_url }}" class="language-link">日本語 (Japanese)</a></li>
     <li><a href="{{ en_url }}" class="language-link">English</a></li>
@@ -21,13 +21,9 @@
 {% endif %}
 </ul>
 <h4 class="widget-title">Users Guide</h4>
-{{post.url}}
-{{page.url}}
-{{site.url}}
-{{site_url}}
-{% if page.url contains '/jp/' %}
+{% if post.url contains '/jp/' %}
     {% include generateDynamicMenu.html root="/user-guide/jp" %}
-{% elsif page.url contains '/en/' %}   
+{% elsif post.url contains '/en/' %}   
     {% include generateDynamicMenu.html root="/user-guide/en" %}
 {% else %} 
     {% include generateDynamicMenu.html root="/user-guide/en" %}
