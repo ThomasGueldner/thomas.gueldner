@@ -26,7 +26,7 @@ cakephper さんの記事にもありますが、ここでの**"速い"**とは*
  MySQL 5.5.24
 ```
 
-※ できれば、MySQLを別のマシンに置きたかったですが、それがなかったもので。。
+※ できれば、MySQLを別のマシンに置きたかったですが、それがなかったもので。
 
 ### postsテーブルのスキーマ
 
@@ -105,11 +105,11 @@ topコマンドを使った目視なので説得力にかけるのですが、�
 
 ということで、負荷をかけている時のTreeFrog FrameworkとCodeigniterについて、それぞれtopコマンドの結果を以下に貼り付けます。
 
-TreeFrog Framework 高負荷時の top コマンド画面
+**TreeFrog Framework 高負荷時の top コマンド画面**
 
 ![top コマンド画面 1](http://www.treefrogframework.org/wp-content/uploads/2012/07/snapshot2-2.png "top コマンド画面 1")
 
-Codeigniter 高負荷時の top コマンド画面
+**Codeigniter 高負荷時の top コマンド画面**
 
 ![top コマンド画面 2](http://www.treefrogframework.org/wp-content/uploads/2012/07/snapshot2-2.png "top コマンド画面 2")
 

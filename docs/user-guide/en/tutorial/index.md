@@ -31,34 +31,34 @@ Example in MySQL:
 Set the character set to UTF-8. You can also specify this when generating the database (do ensure that it is being set correctly, see FAQ). You can specify the configuration file for the database, as described below. Also, make the path through into MySQL using the command line tool.
 
 ```
-$ mysql -u root -p
-Enter password:
+ $ mysql -u root -p
+ Enter password:
 
-mysql> CREATE DATABASE blogdb DEFAULT CHARACTER SET utf8;
-Query OK, 1 row affected (0.01 sec)
+ mysql> CREATE DATABASE blogdb DEFAULT CHARACTER SET utf8;
+ Query OK, 1 row affected (0.01 sec)
 
-mysql> USE blogdb;
-Database changed
+ mysql> USE blogdb;
+ Database changed
 
-mysql> CREATE TABLE blog (id INTEGER AUTO_INCREMENT PRIMARY KEY, title VARCHAR(20), body VARCHAR(200), created_at DATETIME, updated_at DATETIME, lock_revision INTEGER) DEFAULT CHARSET=utf8;
+ mysql> CREATE TABLE blog (id INTEGER AUTO_INCREMENT PRIMARY KEY, title  VARCHAR(20), body VARCHAR(200), created_at DATETIME, updated_at DATETIME, lock_revision INTEGER) DEFAULT CHARSET=utf8;
 
-Query OK, 0 rows affected (0.02 sec)
+ Query OK, 0 rows affected (0.02 sec)
 
-mysql> DESC blog;
-+---------------+--------------+------+-----+---------------------+------
-| Field         | Type         | Null | Key | Default             | Extra
-+---------------+--------------+------+-----+---------------------+------
-| id            | int(11)      | NO   | PRI | NULL                | auto_
-| title         | varchar(20)  | YES  |     | NULL                |      
-| body          | varchar(200) | YES  |     | NULL                |      
-| created_at    | datetime     | YES  |     | NULL                | 
-| updated_at    | datetime     | YES  |     | NULL                |      
-| lock_revision | int(11)      | YES  |     | NULL                |      
-+---------------+--------------+------+-----+---------------------+------
-6 rows in set (0.01 sec)
+ mysql> DESC blog;
+ +---------------+--------------+------+-----+---------------------+------
+ | Field         | Type         | Null | Key | Default             | Extra
+ +---------------+--------------+------+-----+---------------------+------
+ | id            | int(11)      | NO   | PRI | NULL                | auto_
+ | title         | varchar(20)  | YES  |     | NULL                |      
+ | body          | varchar(200) | YES  |     | NULL                |      
+ | created_at    | datetime     | YES  |     | NULL                | 
+ | updated_at    | datetime     | YES  |     | NULL                |      
+ | lock_revision | int(11)      | YES  |     | NULL                |      
+ +---------------+--------------+------+-----+---------------------+------
+ 6 rows in set (0.01 sec)
 
-mysql> quit
-Bye
+ mysql> quit
+ Bye
 ```
   
 Example in SQLite:
@@ -89,27 +89,27 @@ Open the file in the editor, enter the appropriate values for your environment t
 Example in MySQL :
 
 ```
-[dev]
-DriverType=QMYSQL
-DatabaseName=blogdb
-HostName=
-Port=
-UserName=root
-Password=root
-ConnectOptions=
+ [dev]
+ DriverType=QMYSQL
+ DatabaseName=blogdb
+ HostName=
+ Port=
+ UserName=root
+ Password=root
+ ConnectOptions=
 ```
 
 Example in SQLite :
 
 ```
-[dev]
-DriverType=QSQLITE
-DatabaseName=db/blogdb
-HostName=
-Port=
-UserName=
-Password=
-ConnectOptions=
+ [dev]
+ DriverType=QSQLITE
+ DatabaseName=db/blogdb
+ HostName=
+ Port=
+ UserName=
+ Password=
+ ConnectOptions=
 ```
   
 Once you have correctly set these details, it's time to display the table to access the DB.
@@ -161,8 +161,8 @@ TemplateSystem=Otama
 From the command line, run the command generator (tspawn) which will generate the underlying code. The example below shows the production of controller, model, and view. The table name is specified as the command argument.
 
 ```
-  $ cd blogapp
-  $ tspawn scaffold blog
+ $ cd blogapp
+ $ tspawn scaffold blog
    created  controllers/blogcontroller.h
    created  controllers/blogcontroller.cpp
    created  controllers/controllers.pro
@@ -192,26 +192,26 @@ For example, after modifying a table, run the following command to update the sq
 Help of the tspawn command:
 
 ```
-$ tspawn --help
-usage: tspawn <subcommand> [args]
+ $ tspawn --help
+ usage: tspawn <subcommand> [args]
 
-Type 'tspawn --show-drivers' to show all the available database drivers for Qt.
-Type 'tspawn --show-driver-path' to show the path of database drivers for Qt.
-Type 'tspawn --show-tables' to show all tables to user in the setting of 'dev'.
-Type 'tspawn --show-collections' to show all collections in the MongoDB.
+ Type 'tspawn --show-drivers' to show all the available database drivers for Qt.
+ Type 'tspawn --show-driver-path' to show the path of database drivers for Qt.
+ Type 'tspawn --show-tables' to show all tables to user in the setting of 'dev'.
+ Type 'tspawn --show-collections' to show all collections in the MongoDB.
 
-Available subcommands:
-  new (n)         <application-name>
-  scaffold (s)    <table-name> [model-name]
-  controller (c)  <controller-name> action [action ...]
-  model (m)       <table-name> [model-name]
-  usermodel (u)   <table-name> [username password [model-name]]
-  sqlobject (o)   <table-name> [model-name]
-  mongoscaffold (ms) <model-name>
-  mongomodel (mm) <model-name>
-  validator (v)   <name>
-  mailer (l)      <mailer-name> action [action ...]
-  delete (d)      <table-name or validator-name>
+ Available subcommands:
+   new (n)         <application-name>
+   scaffold (s)    <table-name> [model-name]
+   controller (c)  <controller-name> action [action ...]
+   model (m)       <table-name> [model-name]
+   usermodel (u)   <table-name> [username password [model-name]]
+   sqlobject (o)   <table-name> [model-name]
+   mongoscaffold (ms) <model-name>
+   mongomodel (mm) <model-name>
+   validator (v)   <name>
+   mailer (l)      <mailer-name> action [action ...]
+   delete (d)      <table-name or validator-name>
 ```
 
 ## Build the Source Code
@@ -260,12 +260,15 @@ If you want it to run in the background, use the option -d together with any oth
 
 The command option '-e'  appears in the above examples. When this is followed by a section name that you have specified in database.ini before, it can be used to change the database settings. If no section name is specified it is assumed that the command refers to a product (when the project is being made, the following three sections are predefined). 
  
+<div class="table-div">
 
 | Section | Description |
 | ------- | ------------|
 | dev	  | For generator, development |
 | test	  | For test |
 | product |	For official version, production version |
+
+</div>
  
 '-e' comes from the initials letter of “environment”.
 

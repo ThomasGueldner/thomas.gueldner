@@ -119,7 +119,7 @@ Similarly, <% techoex(..); %> can be rewritten in the notation <==$ .. %>.
 
 To sum up, to export an object of int type or QString type, I think it’s better to output using the notation <=$ .. %>, unless you want to output just once (in which case, use the fetch process ).
 
-<span style="color: #b22222">**In brief: Use <=$ .. %> to export objects that do not output only once.** </$>
+**In brief: Use \<=\$ .. %> to export objects that do not output only once.**
 
 ## How to Write Comments
 
