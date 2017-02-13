@@ -16,9 +16,7 @@
     <li><a href="{{ jp_url }}" class="language-link">日本語 (Japanese)</a></li>
     <li><a href="{{ en_url }}" class="language-link">English</a></li>
 {% else %} 
-    {{ site.github.url }}
-    {% assign en_url = site.url | prepend: site.github.url %}
-    {{ en_url}}
+    {{ site.url }}{{ site.github.url }}
     <li><a href="{{ site.github.url }}/jp" class="language-link">日本語 (Japanese)</a></li>
     <li><a href="{{ site.github.url }}/" class="language-link">English</a></li>
 {% endif %}
