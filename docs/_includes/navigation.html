@@ -10,9 +10,9 @@
     {% endif %}
     <li><a href="{{ en_url }}" class="language-link">English</a></li>
 {% elsif site.url contains '/en/' %} 
-    {% assign jp_url_raw = site.url | prepend: site.github.url %}
+    {% assign jp_url = site.url | prepend: site.github.url %}
     {% assign en_url = site.url | prepend: site.github.url %}
-    {% assign jp_url = jp_url_raw | replace: '/en/', '/jp/' %}
+    {% assign jp_url = jp_url | replace: '/en/', '/jp/' %}
     <li><a href="{{ jp_url }}" class="language-link">日本語 (Japanese)</a></li>
     <li><a href="{{ en_url }}" class="language-link">English</a></li>
 {% else %} 
@@ -21,6 +21,7 @@
 {% endif %}
 </ul>
 <h4 class="widget-title">Users Guide</h4>
+{{site.url}}
 {% if site.url contains '/jp/' %}
     {% include generateDynamicMenu.html root="/user-guide/jp" %}
 {% elsif site.url contains '/en/' %}   
