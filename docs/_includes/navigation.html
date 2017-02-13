@@ -21,6 +21,7 @@
 {% endif %}
 </ul>
 <h4 class="widget-title">Users Guide</h4>
+{{ post.url }}
 {% if post.url contains '/jp/' %}
     {% include generateDynamicMenu.html root="/user-guide/jp" %}
 {% elsif post.url contains '/en/' %}   
