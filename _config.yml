@@ -6,7 +6,7 @@ kramdown:
 github: [metadata]
 gems: [markdown]
 theme: jekyll-theme-slate
-# baseurl: /docs
+baseurl: 
 
 # Server
 source:       docs
