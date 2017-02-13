@@ -1,17 +1,17 @@
 <h4 class="widget-title">Languages</h4>
 <ul>
 {% if site.url contains '/jp/' %}
-    <li><a href="{{ site.baseurl }}{{ site.url }}" class="language-link">日本語 (Japanese)</a></li>
+    <li><a href="{{ site.url }}" class="language-link">日本語 (Japanese)</a></li>
     {% if site.url contains '/user-guide/' %}
         {% assign en_url = site.url | replace: '/jp/', '/en/' %}
     {% else %}
         {% assign en_url = site.url | replace: '/jp/', '' %}
     {% endif %}
-    <li><a href="{{ site.baseurl }}{{ en_url }}" class="language-link">English</a></li>
+    <li><a href="{{ en_url }}" class="language-link">English</a></li>
 {% elsif site.url contains '/en/' %} 
     {% assign jp_url = site.url | replace: '/en/', '/jp/' %}
-    <li><a href="{{ site.baseurl }}{{ jp_url }}" class="language-link">日本語 (Japanese)</a></li>
-    <li><a href="{{ site.baseurl }}{{ site.url }}" class="language-link">English</a></li>
+    <li><a href="{{ jp_url }}" class="language-link">日本語 (Japanese)</a></li>
+    <li><a href="{{ site.url }}" class="language-link">English</a></li>
 {% else %} 
     <li><a href="/jp" class="language-link">日本語 (Japanese)</a></li>
     <li><a href="/" class="language-link">English</a></li>
