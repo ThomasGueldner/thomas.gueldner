@@ -40,7 +40,7 @@ img#logo {
     margin: 0px;
 }
 #main-content {
-    width: 730px;
+    width: 720px;
     float: left;
     padding-bottom: 10px;
 }
@@ -74,6 +74,10 @@ img#logo {
     float: right;
     padding: 0 10px 10px 10px;
     font-size: 0.8em;
+    background: #fbfbfb;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    margin-left: 10px;
 }
 #navigation ul {
     margin-bottom: 0px;
