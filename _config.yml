@@ -1,9 +1,9 @@
 name: 		Treefrog Framework
 markdown: 	kramdown
+highlighter: rouge
 
 kramdown:  
   parse_block_html: true
-  extensions: ["tables"]
 
 github: 	[metadata]
 gems: 		[markdown]
