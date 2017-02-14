@@ -2,7 +2,11 @@
 ---
 
 @charset "utf-8";
-@import "{{ site.theme }}";
+{% if site.github.url %}
+    @import "{{ site.github.url }}/{{ site.theme }}";
+{% else %}
+    @import "{{ site.theme }}";
+{% endif %}
 
 body {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
