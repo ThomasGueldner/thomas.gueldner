@@ -41,7 +41,7 @@ The same method can be used for the TSqlQuery class because it inherits the [QSq
 
 <span style="color: #b22222">**In brief: Queries can be generated using placeholders in all cases.** </span>
 
-In fact, you can see in the [query log](/user-guide/en/helper-reference/logging.html){:target="_blank"} any query that has been executed.
+In fact, you can see in the [query log]({{ site.baseurl }}/user-guide/en/helper-reference/logging.html){:target="_blank"} any query that has been executed.
 
 ## Reading a Query From a File
 
@@ -62,7 +62,7 @@ query.addBind(100).addBind(tr("Hello")).addBind(tr("Hello world"));
 query.exec();  // Query execution
 ```
 
-The cache works inside the load() method (but only when thread module is applied in [MPM](/user-guide/en/performance/index.html){:target="_blank"}. The query is read from the file only on the first occasion, after that it is used from the cache memory, so it then works at high speed. 
+The cache works inside the load() method (but only when thread module is applied in [MPM]({{ site.baseurl }}/user-guide/en/performance/index.html){:target="_blank"}. The query is read from the file only on the first occasion, after that it is used from the cache memory, so it then works at high speed. 
 After the file has been updated, we need to restart the server in order to read the query statement.
 
 ```

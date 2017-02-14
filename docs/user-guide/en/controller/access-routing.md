@@ -13,7 +13,7 @@ First, I will discuss control by the user.
 
 On some Web sites, there is a fixed page that anyone can access, and also pages that can only be accessed by users. For example an Admin page would only be accessible to persons with the right authority. In such cases, you can deny access in the following ways:
 
-First, refer to the section on [authentication](/user-guide/en/helper-reference/authentication.html){:target="_blank"} and create a user model class.
+First, refer to the section on [authentication]({{ site.baseurl }}/user-guide/en/helper-reference/authentication.html){:target="_blank"} and create a user model class.
 For the page to which you want to restrict access, login authentication should be required. By doing so, an instance of the user model will be obtained by doing so.
 
 Then override setAccessRules of controller() method. Set the access rules of access allow/deny the action by group or user ID. User ID and group point to the user model classes of identityKey() method and groupKey() method respectively for the return value.

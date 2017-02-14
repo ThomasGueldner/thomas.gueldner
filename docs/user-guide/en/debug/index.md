@@ -60,7 +60,7 @@ Next we will configure these items.
 
 Let’s introduce debugging using the Qt Creator, I think the way you debug is basically the same with other debuggers.
 
-First, make a thread in the [MPM](/user-guide/en/performance/index.html){:target="_blank"} application configuration file.
+First, make a thread in the [MPM]({{ site.baseurl }}/user-guide/en/performance/index.html){:target="_blank"} application configuration file.
 
 ```
  MultiProcessingModule=thread

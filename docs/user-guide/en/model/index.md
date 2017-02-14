@@ -53,7 +53,7 @@ The model class that was created in the generator is inherited from the TAbstrac
 
 <span style="color: #b22222">**In brief: if you want to use an ORM object you should use TAbstractModel class inherit regardless.** </span>
 
-When the model is created by the generator, the getter/setter of each property and the class methods that are equivalent to "create" and "read" are defined. The following example is an excerpt of the Blog class which we made in the [tutorial chapter](/user-guide/en/tutorial/index.html){:target="_blank"}.
+When the model is created by the generator, the getter/setter of each property and the class methods that are equivalent to "create" and "read" are defined. The following example is an excerpt of the Blog class which we made in the [tutorial chapter]({{ site.baseurl }}/user-guide/en/tutorial/index.html){:target="_blank"}.
 
 ```c++
 static Blog create(const QString &title, const QString &body);

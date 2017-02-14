@@ -50,7 +50,7 @@ The way to send the contents of the model in XML format is not much different fr
  bool renderXml(const QStringList &list);
 ```
 
-If the input from the output of these does not suit your requirements, you can implement a new template. How to implement is described in the [view chapter](/user-guide/en/view/index.html){:target="_blank"}, but do not forget that you only set the content type of the response in the controller.
+If the input from the output of these does not suit your requirements, you can implement a new template. How to implement is described in the [view chapter]({{ site.baseurl }}/user-guide/en/view/index.html){:target="_blank"}, but do not forget that you only set the content type of the response in the controller.
 
 ```c++
  setContentType("text/xml")

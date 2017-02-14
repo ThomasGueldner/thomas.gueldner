@@ -41,7 +41,7 @@ TSqlQueryクラスは Qt の[QSqlQuery](http://doc.qt.io/qt-4.8/qsqlquery.html){
   
 <span style="color: #b22222">**結論： プレースホルダを使ってクエリを生成せよ。** </span>
 
-実際に、どんなクエリが実行されたのかを[クエリログ](/user-guide/jp/helper-reference/logging.html){:target="_blank"}で確認することができます。
+実際に、どんなクエリが実行されたのかを[クエリログ]({{ site.baseurl }}/user-guide/jp/helper-reference/logging.html){:target="_blank"}で確認することができます。
 
 ## クエリをファイルから読み込む
 

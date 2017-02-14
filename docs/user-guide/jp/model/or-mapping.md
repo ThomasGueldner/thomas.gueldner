@@ -65,7 +65,7 @@ page_id: "060.010"
 
 データベースにテーブルを作成したら、設定ファイルの dev セクションに接続情報を設定し、ジェネレータコマンドで「足場」を生成しておきましょう。
 
-以下の節では、[チュートリアルの章](/user-guide/jp/tutorial/index.html){:target="_blank"}で作った BlogObject クラスを例に説明します。
+以下の節では、[チュートリアルの章]({{ site.baseurl }}/user-guide/jp/tutorial/index.html){:target="_blank"}で作った BlogObject クラスを例に説明します。
 
 ## ORM オブジェクトの読み込み
 
@@ -87,7 +87,7 @@ QList<BlogObject> list = mapper.findAll();
 
 大量のレコードが存在するときにその全てを読み込むと、メモリを食いつぶしてしまう恐れがあるので注意が必要です。 setLimit メソッドで上限を設定することができます。
  
-ORM の内部では SQL文 が生成され発行されています。どのようなクエリが発行されたかを確認するには、[クエリログ](/user-guide/jp/helper-reference/logging.html){:target="_blank"}を確認してください。
+ORM の内部では SQL文 が生成され発行されています。どのようなクエリが発行されたかを確認するには、[クエリログ]({{ site.baseurl }}/user-guide/jp/helper-reference/logging.html){:target="_blank"}を確認してください。
 
 ## イテレータ
 
