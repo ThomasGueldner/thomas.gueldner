@@ -2,9 +2,6 @@ name: 		Treefrog Framework
 markdown: 	kramdown
 highlighter: rouge
 
-kramdown:  
-  parse_block_html: true
-
 github: 	[metadata]
 gems: 		[markdown]
 theme: 		jekyll-theme-slate
