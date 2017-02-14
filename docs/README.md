@@ -27,10 +27,18 @@ This is the readMe. Here you can find useful links and information how to use Gi
 
 [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables#)
 
+[Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
+
 ### Show Website in Browser
 
 ```
  localhost:4000
+```
+
+### Start Jekyll Build Command
+
+```
+ bundle exec jekyll build
 ```
 
 ### Start Jekyll Server Command
@@ -43,4 +51,17 @@ This is the readMe. Here you can find useful links and information how to use Gi
 
 ```
  bundle exec jekyll serve --host xxx.xxx.xxx.xxx
+ 
 ```
+
+### Using Markdown inside an HTML \<div>-tag
+
+```html
+ <div markdown="1"> 
+ 
+    ... markdown here ... 
+    
+ </div
+```
+
+
