@@ -24,14 +24,13 @@ The following DBMS (driver) are supported (this is equivalent to Qt supports):
 
 As we proceed with the description, let's check the correspondence of terms between RDB and object-oriented language.
 
-{::options parse_block_html="true" /}
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
 **Term correspondence table**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | Object-orientation | RDB    |
 |--------------------|--------|
@@ -47,7 +46,7 @@ The connection information for the database is specified in the configuration fi
 
 Parameters that can be set are as follows.
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | Parameters     | Description                                                                    |
 |----------------|--------------------------------------------------------------------------------|
@@ -214,7 +213,7 @@ There are often cases where you want to store information such as the date and t
 
 For saving date and time of creation, you can use the field name called *created_at*. Use the field name *updated_at* instead for saving date and time of any update. We use TIMESTAMP type. If there is such a field, the ORM object records the time stamp at the right time.
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | Item                                     | Field Name                |
 |------------------------------------------|---------------------------|

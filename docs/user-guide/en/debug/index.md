@@ -19,14 +19,13 @@ In debug, the following settings are used according to the platforms.
 
 In the case of Linux/ Mac OS X:
 
-{::options parse_block_html="true" /}
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
 **In the case of Linux/ Mac OS X:**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | Option                                                | Value                                          |
 |-------------------------------------------------------|------------------------------------------------|
@@ -36,13 +35,13 @@ In the case of Linux/ Mac OS X:
 
 </div><br>
  
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
 **In the case of Windows:**
 
 </div>
 <br>
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | Option           | Value                                                                                                                                                                                |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

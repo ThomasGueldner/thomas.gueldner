@@ -24,14 +24,13 @@ page_id: "060.010"
 
 説明を進めるにあたり、オブジェクト指向言語と RDB における用語の対応を確認をしましょう。
 
-{::options parse_block_html="true" /}
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
 **用語対応表**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | オブジェクト指向	 | RDB    |
 |--------------------|--------|
@@ -48,7 +47,7 @@ page_id: "060.010"
 
 設定可能なパラメータは次のとおり。
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | パラメータ     | 説明                                                                    |
 |----------------|--------------------------------------------------------------------------------|
@@ -217,7 +216,7 @@ PostgreSQL の例：
 
 テーブルに対し、作成日時、更新日時を保存するカラム名をそれぞれ、created_at、updated_at にするだけです。型は TIMESTAMP 型にします。このようなフィールドがあると、ORM オブジェクトは適切なタイミングでタイムスタンプを記録します。
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | 項目              | カラム名                   |
 |------------------|---------------------------|

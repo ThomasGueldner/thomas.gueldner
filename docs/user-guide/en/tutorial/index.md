@@ -259,9 +259,8 @@ If you want it to run in the background, use the option -d together with any oth
 ```
 
 The command option '-e'  appears in the above examples. When this is followed by a section name that you have specified in database.ini before, it can be used to change the database settings. If no section name is specified it is assumed that the command refers to a product (when the project is being made, the following three sections are predefined). 
- 
- {::options parse_block_html="true" /}
-<div class="table-div">
+
+<div class="table-div" markdown="1">
 
 | Section | Description |
 | ------- | ------------|

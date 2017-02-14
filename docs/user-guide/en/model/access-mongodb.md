@@ -11,8 +11,7 @@ To manage the data in the RDB, you need to define the table (schema) in advance,
 
 Here is a comparison between the layered structures of an RDB and MongoDB.
 
-{::options parse_block_html="true" /}
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | MongoDB    | RDB      | Remarks       |
 |------------|----------|---------------|

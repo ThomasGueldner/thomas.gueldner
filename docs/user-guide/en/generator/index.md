@@ -56,14 +56,13 @@ password=root
 connectOptions=
 ```
 
-{::options parse_block_html="true" /}
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
 **Settings List**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | Item           | Meaning            | Remarks                                                                                                                                  |
 | -------------- |--------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -173,13 +172,13 @@ Also, when you build the view, and then output the source file in views/_src dir
 CRUD covers the four major functions found in a Web application. The name comes from taking the initial letters of "Create (generate)," "Read (Read)", "Update (update)", and "Delete (Delete)".
 When you create a scaffolding, the generator command generates the naming code in the next.
  
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
 **CRUD Correspondence Table**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 |       | Action    | Model     | ORM       | SQL       |
 | ----- |-----------|-----------|-----------|-----------|

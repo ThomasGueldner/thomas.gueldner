@@ -17,14 +17,13 @@ page_id: "110.0"
 
 デバッグでは、プラットフォームに応じて次の設定を使用します。
 
-{::options parse_block_html="true" /}
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
 **Linux / Mac OS Xの場合：**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | オプション                                                | 値                                          |
 |-------------------------------------------------------|------------------------------------------------|
@@ -34,13 +33,13 @@ page_id: "110.0"
  
 </div>
 <br>
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
 **Windowsの場合：**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | オプション           | 値                                                                                                                                                                                |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

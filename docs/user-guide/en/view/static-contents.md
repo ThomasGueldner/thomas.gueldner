@@ -12,8 +12,7 @@ When you access http://URL:PORT/sample.html from the browser, in case the applic
 
 After creating the skeleton of the application by using the generator command, the following subdirectories will be created.
 
-{::options parse_block_html="true" /}
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | Directory      | File Type                    | URL path    |
 |----------------|------------------------------|-------------|
@@ -45,7 +44,7 @@ If the Internet media types don’t cover your needs, you can add other types in
 The AP server is always required to return some response even if some error or exception occurs. In these cases, the status codes for the error responses are defined in [RFC](http://www.ietf.org/rfc/rfc2616.txt){:target="_blank"}.
 In this framework, the contents of the following files will be returned as the response when an error or exception occurs.
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | Cause                    | Static File     |
 |--------------------------|-----------------|

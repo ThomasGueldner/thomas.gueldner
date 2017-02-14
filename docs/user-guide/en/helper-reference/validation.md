@@ -38,14 +38,13 @@ Rules are implicitly set for "mandatory input". If you do NOT want an input to b
 setRule("title", Tf::Required, false);
 ``` 
 
-{::options parse_block_html="true" /}
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
 **Rules**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | enum         | Meaning                 |
 |--------------|-------------------------|

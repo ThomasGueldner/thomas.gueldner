@@ -11,15 +11,14 @@ TreeFrog Framework には、個々のリクエストに応じて動的なコン�
 また、SSL や圧縮レスポンスに対応したい場合も、別途Webサーバを立ち上げなければなりません。
 
 **結論：  規模の大きいサイトでは Web サーバもたてろ。**
- 
-{::options parse_block_html="true" /} 
-<div class="center aligned">
+  
+<div class="center aligned" markdown="1">
 
 **サーバサイドの役割分担**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | サーバ                        | 役割                                                   |
 |-------------------------------|--------------------------------------------------------|

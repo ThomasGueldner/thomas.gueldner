@@ -57,14 +57,13 @@ password=root
 connectOptions=
 ```
 
-{::options parse_block_html="true" /}
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
 **設定一覧**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | 項目           | 意味            | 備考                                                                                                                                                                                                              |
 |----------------|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -170,13 +169,13 @@ Rails のように単語の単数形・複数形の変換はしません。
 CRUD とは、Web アプリケーションにおける主要な４つの機能のことで、「Create （生成）」 「Read （読込）」 「Update （更新）」 「Delete （削除）」の頭文字をとっています。
 ジェネレータコマンドで足場を作成すると、次の命名でコードを生成します。
 
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
-**CRUD CRUD 対応表**
+**CRUD 対応表**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 |       | アクション    | モデル     | ORM       | SQL       |
 | ----- |-----------|-----------|-----------|-----------|

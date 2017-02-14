@@ -37,14 +37,13 @@ setRule() の第４引数には、検証エラー時のメッセージを設定�
 setRule("title", Tf::Required, false);
 ``` 
 
-{::options parse_block_html="true" /}
-<div class="center aligned">
+<div class="center aligned" markdown="1">
 
 **設定可能なルール**
 
 </div>
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | enum         | Meaning                 |
 |--------------|-------------------------|

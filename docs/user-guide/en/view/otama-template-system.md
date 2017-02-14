@@ -360,8 +360,7 @@ Lines beginning with an #include string are moved directly to the code view.
 
 The following table describes the Otama operator which we’ve been discussing.
 
-{::options parse_block_html="true" /}
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | Operator | Description                                                                                                                                                                                | Remarks                                                |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
@@ -375,7 +374,7 @@ The following table describes the Otama operator which we’ve been discussing.
 Extended versions of these four operators are as follows.
 With the echo() statement and eh() statement no longer being needed, you'll be able to write shorter code.
 
-<div class="table-div">
+<div class="table-div" markdown="1">
 
 | Operator                       | Description                                                                                                                                                                         |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
