@@ -3,6 +3,7 @@ markdown: 	kramdown
 
 kramdown:  
   parse_block_html: true
+  extensions: ["tables"]
 
 github: 	[metadata]
 gems: 		[markdown]
