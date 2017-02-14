@@ -56,13 +56,8 @@ password=root
 connectOptions=
 ```
 
-<div class="center aligned">
-
 **Settings List**
 
-</div>
-
-<div class="table-div">
 
 | Item           | Meaning            | Remarks                                                                                                                                  |
 | -------------- |--------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -74,7 +69,6 @@ connectOptions=
 | password       | Password           |     |
 | connectOptions | Connection options | For more information see Qt documents:<br>[QSqlDatabase::setConnectOptions()](http://doc.qt.io/qt-5/qsqldatabase.html){:target="_blank"} |
 
-</div><br>
 
 If the database driver is not included in the Qt SDK, you will not be able to access the database. If you have not yet built, you should incorporate the driver by reference to the FAQ. Alternatively, you can download the database driver from the [download page](http://www.treefrogframework.org/download){:target="_blank"}, and then install it.
 
