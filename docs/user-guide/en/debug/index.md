@@ -19,6 +19,7 @@ In debug, the following settings are used according to the platforms.
 
 In the case of Linux/ Mac OS X:
 
+{::options parse_block_html="true" /}
 <div class="center aligned">
 
 **In the case of Linux/ Mac OS X:**

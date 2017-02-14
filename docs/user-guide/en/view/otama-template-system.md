@@ -360,6 +360,7 @@ Lines beginning with an #include string are moved directly to the code view.
 
 The following table describes the Otama operator which we’ve been discussing.
 
+{::options parse_block_html="true" /}
 <div class="table-div">
 
 | Operator | Description                                                                                                                                                                                | Remarks                                                |

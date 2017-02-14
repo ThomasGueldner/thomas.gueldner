@@ -7,6 +7,7 @@ page_id: "080.050"
 
 Your Web application will log four outputs as follows.
 
+{::options parse_block_html="true" /}
 <div class="table-div">
 
 | Log          | File Name    | Content                                                                                                                                                                                                                                                                                      |

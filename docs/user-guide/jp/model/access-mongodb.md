@@ -11,6 +11,7 @@ RDB ではデータを管理するためにあらかじめテーブル（スキ�
 
 MongoDB と RDB の階層構造について比較してみます。
 
+{::options parse_block_html="true" /}
 <div class="table-div">
 
 | MongoDB    | RDB      | 備考       |

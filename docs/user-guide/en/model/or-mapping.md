@@ -24,7 +24,7 @@ The following DBMS (driver) are supported (this is equivalent to Qt supports):
 
 As we proceed with the description, let's check the correspondence of terms between RDB and object-oriented language.
 
-
+{::options parse_block_html="true" /}
 <div class="center aligned">
 
 **Term correspondence table**

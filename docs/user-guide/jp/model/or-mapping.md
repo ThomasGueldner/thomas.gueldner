@@ -24,6 +24,7 @@ page_id: "060.010"
 
 説明を進めるにあたり、オブジェクト指向言語と RDB における用語の対応を確認をしましょう。
 
+{::options parse_block_html="true" /}
 <div class="center aligned">
 
 **用語対応表**

@@ -37,6 +37,7 @@ setRule() の第４引数には、検証エラー時のメッセージを設定�
 setRule("title", Tf::Required, false);
 ``` 
 
+{::options parse_block_html="true" /}
 <div class="center aligned">
 
 **設定可能なルール**

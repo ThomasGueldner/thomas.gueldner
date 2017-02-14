@@ -12,6 +12,7 @@ TreeFrog Framework には、個々のリクエストに応じて動的なコン�
 
 **結論：  規模の大きいサイトでは Web サーバもたてろ。**
  
+{::options parse_block_html="true" /} 
 <div class="center aligned">
 
 **サーバサイドの役割分担**

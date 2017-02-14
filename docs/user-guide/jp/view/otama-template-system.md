@@ -365,6 +365,7 @@ CSRF 対策について、もう少し詳細を知りたい方は[セキュリ�
 
 説明した Otama 演算子を表にまとめます。
 
+{::options parse_block_html="true" /}
 <div class="table-div">
 
 | <nobr>演算子</nobr> | 説明                                                                                                                                                                                | 備考                                                |

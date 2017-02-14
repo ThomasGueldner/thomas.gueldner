@@ -12,6 +12,7 @@ When you access http://URL:PORT/sample.html from the browser, in case the applic
 
 After creating the skeleton of the application by using the generator command, the following subdirectories will be created.
 
+{::options parse_block_html="true" /}
 <div class="table-div">
 
 | Directory      | File Type                    | URL path    |

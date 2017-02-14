@@ -38,6 +38,7 @@ Rules are implicitly set for "mandatory input". If you do NOT want an input to b
 setRule("title", Tf::Required, false);
 ``` 
 
+{::options parse_block_html="true" /}
 <div class="center aligned">
 
 **Rules**

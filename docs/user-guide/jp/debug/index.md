@@ -17,6 +17,7 @@ page_id: "110.0"
 
 デバッグでは、プラットフォームに応じて次の設定を使用します。
 
+{::options parse_block_html="true" /}
 <div class="center aligned">
 
 **Linux / Mac OS Xの場合：**

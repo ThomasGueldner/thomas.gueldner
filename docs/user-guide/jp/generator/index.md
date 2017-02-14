@@ -56,7 +56,8 @@ userName=root
 password=root
 connectOptions=
 ```
- 
+
+{::options parse_block_html="true" /}
 <div class="center aligned">
 
 **設定一覧**

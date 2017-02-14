@@ -12,6 +12,7 @@ Also, if you want to work with compression response and SSL, you must set up a W
 
 <span style="color: #b22222">**In brief: For large scale sites, set up the web server.** </span>
 
+{::options parse_block_html="true" /}
 <div class="center aligned">
 
 **Roles of server-side**
