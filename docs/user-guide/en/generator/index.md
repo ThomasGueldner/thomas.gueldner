@@ -64,15 +64,23 @@ connectOptions=
 
 <div class="table-div">
 
+|---
 | Item           | Meaning            | Remarks                                                                                                                                  |
 |----------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | driverType     | Driver name        | Choices are as follows:<br>- QDB2: IBM DB2<br>- QIBASE: Borland InterBase Driver<br>- QMYSQL: MySQL Driver<br>- QOCI: Oracle Call Interface Driver<br>- QODBC: ODBC Driver<br>- QPSQL: PostgreSQL Driver<br>- QSQLITE: SQLite version 3 or above |
+|--
 | databaseName   | Database name      | In the case of SQLite a file path must be specified.<br>Example: db/blogdb |
+|--
 | hostName       | Host name          | *localhost* in the case of blank |
+|--
 | port           | Port number        | The default port if blank |
+|--
 | userName       | User name          |     |
+|--
 | password       | Password           |     |
+|--
 | connectOptions | Connection options | For more information see Qt documents:<br>[QSqlDatabase::setConnectOptions()](http://doc.qt.io/qt-5/qsqldatabase.html){:target="_blank"} |
+|===
 
 </div><br>
 
