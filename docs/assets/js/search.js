@@ -47,8 +47,6 @@
         require('./lunr.multi.js')(elasticlunr);
         
         var idx = elasticlunr(function () {
-            this.pipeline.remove(lunr.stemmer)
-            this.pipeline.remove(lunr.stopWordFilter)
             this.use(elasticlunr.multiLanguage('en', 'jp'));
             this.addField('title');
             this.addField('content');
@@ -60,15 +58,10 @@
                 "content": window.store[key].content
             });
             
-            console.log(window.store[key].title);
-            if (window.store[key].title.indexOf("MongoDB の O/Dマッピング") != -1) {
-                results = idx.search(searchTerm); // Get elasticlunr to perform a search
-                console.log(results);
-            } else
-                var results = idx.search(searchTerm, {
-                    bool: "OR",
-                    expand: true
-                }); // Get elasticlunr to perform a search
+            var results = idx.search(searchTerm, {
+                bool: "OR",
+                expand: true
+            }); // Get elasticlunr to perform a search
             
             displaySearchResults(results, window.store, language);
         }

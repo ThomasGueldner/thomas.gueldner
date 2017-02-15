@@ -1,6 +1,3 @@
----
----
-
 ## Treefrog Framework
 
 This is the readMe. Here you can find useful links and information how to use Github Pages.
