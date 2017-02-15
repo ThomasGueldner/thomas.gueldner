@@ -4,7 +4,7 @@
     <input type="text" class="search-box-navi" placeholder="検索..." name="q">
     <input type="submit" class="search-button-navi" value="検索">
     {% else %}
-<form action="{{ site.baseurl }}//search.html" class="search-form-navi" method="get">
+<form action="{{ site.baseurl }}/search.html" class="search-form-navi" method="get">
     <input type="text" class="search-box-navi" placeholder="Search..." name="q">
     <input type="submit" class="search-button-navi" value="Search">
     {% endif %}
@@ -16,13 +16,13 @@
     {% assign url = page.url | prepend: site.github.url %}
     {% if page.url contains '/user-guide/' %}
         {% assign en_url = url | replace: '/jp/', '/en/' %}
-        <li><a href="{{ en_url }}" class="language-link">English</a></li>
+        <li><a href="{{ site.baseurl }}/{{ en_url }}" class="language-link">English</a></li>
     {% elsif page.url contains '/search.html' %}
         {% assign en_url = url | replace: '/jp/', '' %}
-        <li><a href="/{{ en_url }}" class="language-link">English</a></li>
+        <li><a href="{{ site.baseurl }}/{{ en_url }}" class="language-link">English</a></li>
     {% else %}
         {% assign en_url = url | replace: '/jp/', '' %}
-        <li><a href="{{ en_url }}/" class="language-link">English</a></li>
+        <li><a href="{{ site.baseurl }}/{{ en_url }}/" class="language-link">English</a></li>
     {% endif %}
 {% elsif page.url contains '/en/' %} 
     {% assign jp_url = page.url | prepend: site.github.url %}
