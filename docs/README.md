@@ -26,9 +26,7 @@ This is the readMe. Here you can find useful links and information how to use Gi
 
 [Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/){:target="_blank"}
 
-[Lunr Search Engine](http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/){:target="_blank"}
-
-[Lunr on Github](https://github.com/MihaiValentin/lunr-languages){:target="_blank"}
+[Tipue Search Engine](http://www.tipue.com/search/){:target="_blank"}
 
 ### Show Website in Browser
 

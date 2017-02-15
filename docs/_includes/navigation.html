@@ -1,12 +1,12 @@
 <h4 class="widget-title">Search</h4>
 {% if page.url contains '/jp/' %}
-<form action="/jp/search.html" id="search-form-navi" method="get">
-    <input type="text" id="search-box-navi" placeholder="検索..." name="query">
-    <input type="submit" id="search-button-navi" value="検索">
+<form action="/jp/search.html" class="search-form-navi" method="get">
+    <input type="text" class="search-box-navi" placeholder="検索..." name="q">
+    <input type="submit" class="search-button-navi" value="検索">
     {% else %}
-<form action="/search.html" id="search-form-navi" method="get">
-    <input type="text" id="search-box-navi" placeholder="Search..." name="query">
-    <input type="submit" id="search-button-navi" value="Search">
+<form action="/search.html" class="search-form-navi" method="get">
+    <input type="text" class="search-box-navi" placeholder="Search..." name="q">
+    <input type="submit" class="search-button-navi" value="Search">
     {% endif %}
 </form>
 <h4 class="widget-title">Languages</h4>
