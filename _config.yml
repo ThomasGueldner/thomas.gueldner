@@ -1,16 +1,13 @@
-name: 		Treefrog Framework
-markdown: 	kramdown
-highlighter: rouge
+name: 		    Treefrog Framework
+markdown: 	    kramdown
+highlighter:	rouge
 
-github: 	[metadata]
-gems: 		[markdown]
-theme: 		jekyll-theme-slate
-url: 		https://thomasgueldner.github.io
-
-sass:
-    sass_dir: _sass/
+github:        	[metadata]
+gems: 		   	[markdown]
+theme: 		    jekyll-theme-slate
+url: 		    https://thomasgueldner.github.io
 
 # Server
-source: 	docs
-port: 		4000
-encoding: 	utf-8
+source: 	    docs
+port: 		    4000
+encoding: 	    utf-8

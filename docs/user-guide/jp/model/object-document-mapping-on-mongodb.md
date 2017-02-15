@@ -33,7 +33,7 @@ MongoDB のドキュメントは JSON ライクな形式であることから、
   updated   models/models.pro
 ``` 
 
-次に、ドキュメントに保存されるデータを定義します。 ファイル models/mongoobjects/fooobject.h を編集し、文字型の変数 title と body を追加することにします。
+次に、ドキュメントに保存されるデータを定義します。ファイル models/mongoobjects/fooobject.h を編集し、文字型の変数 title と body を追加することにします。
 
 ```c++
 class T_MODEL_EXPORT FooObject : public TMongoObject, public QSharedData

@@ -1,5 +1,5 @@
 ---
-title: Model
+title: モデル
 page_id: "060.0"
 ---
 
