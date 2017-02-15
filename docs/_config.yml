@@ -8,6 +8,5 @@ theme: 		    jekyll-theme-slate
 url: 		    https://thomasgueldner.github.io
 
 # Server
-source: 	    docs
 port: 		    4000
 encoding: 	    utf-8
