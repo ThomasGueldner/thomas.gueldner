@@ -1,0 +1,36 @@
+---
+title: 検索
+layout: default
+---
+
+<form action="{{ site.baseurl }}/jp/search.html" id="search-form" method="get">
+    <input type="text" id="search-box" placeholder="検索..." name="query">
+    <input type="submit" id="result-search-button" value="検索">
+</form>
+
+<ul id="search-results"></ul>
+
+<script>
+    {% assign root = "/user-guide/jp" %}
+    {% assign rootLength = root | size %}
+    window.store = {
+        {% for site in site.html_pages %}
+            {% assign pagePath = site.url %}
+            {% assign pathSlice = pagePath | slice: 0, rootLength %}
+            {% if root == pathSlice %}
+                "{{ site.url | slugify }}": {
+                    "title": "{{ site.title | xml_escape }}",
+                    "content": {{ site.content | strip_html | strip_newlines | jsonify }},
+                    "url": "{{ site.url | xml_escape }}"
+                }
+                {% unless forloop.last %},{% endunless %}
+            {% endif %}
+        {% endfor %}
+    };
+</script>
+
+<script type="text/javascript">
+    var language = "jp";
+    var baseurl = "{{ site.baseurl }}";
+</script>
+<script src="{{ site.baseurl }}/assets/js/search-bundle.js"></script>

@@ -1,3 +1,14 @@
+<h4 class="widget-title">Search</h4>
+{% if page.url contains '/jp/' %}
+<form action="/jp/search.html" id="search-form-navi" method="get">
+    <input type="text" id="search-box-navi" placeholder="検索..." name="query">
+    <input type="submit" id="search-button-navi" value="検索">
+    {% else %}
+<form action="/search.html" id="search-form-navi" method="get">
+    <input type="text" id="search-box-navi" placeholder="Search..." name="query">
+    <input type="submit" id="search-button-navi" value="Search">
+    {% endif %}
+</form>
 <h4 class="widget-title">Languages</h4>
 <ul>
 {% if page.url contains '/jp/' %}
@@ -5,10 +16,14 @@
     {% assign url = page.url | prepend: site.github.url %}
     {% if page.url contains '/user-guide/' %}
         {% assign en_url = url | replace: '/jp/', '/en/' %}
+        <li><a href="{{ en_url }}" class="language-link">English</a></li>
+    {% elsif page.url contains '/search.html' %}
+        {% assign en_url = url | replace: '/jp/', '' %}
+        <li><a href="/{{ en_url }}" class="language-link">English</a></li>
     {% else %}
         {% assign en_url = url | replace: '/jp/', '' %}
+        <li><a href="{{ en_url }}/" class="language-link">English</a></li>
     {% endif %}
-    <li><a href="{{ en_url }}" class="language-link">English</a></li>
 {% elsif page.url contains '/en/' %} 
     {% assign jp_url = page.url | prepend: site.github.url %}
     {% assign en_url = page.url | prepend: site.github.url %}
@@ -16,8 +31,12 @@
     <li><a href="{{ jp_url }}" class="language-link">日本語 (Japanese)</a></li>
     <li><a href="{{ en_url }}" class="language-link">English</a></li>
 {% else %} 
-    <li><a href="{{ site.github.url }}/jp" class="language-link">日本語 (Japanese)</a></li>
-    <li><a href="{{ site.github.url }}/" class="language-link">English</a></li>
+    {% if page.url contains '/search.html' %}
+        <li><a href="{{ site.baseurl }}/jp/search.html" class="language-link">日本語 (Japanese)</a></li>
+    {% else %}
+        <li><a href="{{ site.baseurl }}/jp" class="language-link">日本語 (Japanese)</a></li>
+    {% endif %}
+    <li><a href="{{ site.baseurl }}/" class="language-link">English</a></li>
 {% endif %}
 </ul>
 <h4 class="widget-title">Users Guide</h4>
